@@ -7,59 +7,36 @@
 *{
   box-sizing: border-box;
 }
+
+.container{
+  max-width: 850px;
+  width: 850px;
+  position: relative;
+  display: inline-block;
+  vertical-align: top;
+  &-fluid {
+    vertical-align: top;
+    display: block;
+    max-width: 1140px;
+    width: 1140px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  &-small{
+    display: inline-block;
+    float: right;
+    max-width: 262px;
+    width: 262px;
+    vertical-align: top;
+  }
+}
 body{
   height: 100%;
   margin: 0;
   padding: 0;
-  font-family: 'Europe Normal', arial;
+  @include def_font(14px,400);
   overflow-x: hidden;
   background-color: white;
-  a{
-    color: $c-text-d;
-    font-size: 15px;
-    line-height: 22px;
-    cursor: pointer;
-  }
-  p{
-    color: $c-text-d;
-    font-size: 16px;
-    line-height: 22px;
-  }
-  span{
-    color: $c-text-d;
-    font-size: 16px;
-    line-height: 22px;
-  }
-  h1{
-    color: $c-text-d;
-    font-size: 40px;
-    line-height: 53px;
-  }
-  h2{
-    color: $c-text-d;
-    font-size: 24px;
-    line-height: 32px;
-  }
-  h3{
-    color: $c-text-d;
-    font-size: 18px;
-    line-height: 24px;
-  }
-  h4{
-    color: $c-text-d;
-    font-size: 17px;
-    line-height: 22px;
-  }
-  h5{
-    color: $c-text-d;
-    font-size: 16px;
-    line-height: 20px;
-  }
-  h6{
-    color: $c-text-d;
-    font-size: 14px;
-    line-height: 18px;
-  }
 } /* Стиль по умолчанию */
 @import "header"; /* Шапка */
 @import "page"; /* Основные стили */

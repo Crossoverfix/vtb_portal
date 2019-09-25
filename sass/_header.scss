@@ -1,0 +1,110 @@
+header{
+  position: relative;
+  padding-top: 101px;
+}
+.header{
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 100vw;
+  z-index: 100;
+  padding-top: 30px;
+  padding-bottom: 15px;
+  min-height: 95px;
+  background-color: #ffffff;
+  box-shadow: 0px 3px 8px 0 rgba(0,0,0,0.11);
+  &__wrap{
+    display: inline-flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    align-items: flex-start;
+    justify-content: flex-start;
+    &__logo{
+      a{
+        display: inline-block;
+        position: relative;
+        height: 33px;
+        margin-right: 20px;
+        img{
+          height: 100%;
+        }
+      }
+    }
+    &__name{
+      &__title{
+        margin-top: 0;
+        margin-bottom: 5px;
+        @include def_font(38px,300);
+        line-height: 38px;
+        color: $c-blue;
+        text-transform: uppercase;
+      }
+      &__sub-title{
+        margin-top: 0;
+        margin-bottom: 0;
+        @include def_font(14px,400);
+        line-height: 14px;
+        color: $c-blue-2;
+      }
+    }
+    &__date{
+      margin-left: auto;
+      margin-right: auto;
+      text-align: right;
+      &__number{
+        margin-top: 0;
+        margin-bottom: 0;
+        @include def_font(18px,500);
+        line-height: 18px;
+        color: $c-text-d;
+        text-transform: uppercase;
+      }
+      &__year{
+        margin-top: 0;
+        margin-bottom: 0;
+        @include def_font(11px,400);
+        line-height: 11px;
+        color: $c-text-d;
+      }
+    }
+  }
+  &-search{
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    position: relative;
+    &__body{
+      width: 100%;
+      position: relative;
+      height: 24px;
+      border-bottom: 2px solid #009fdf;
+      white-space: nowrap;
+      &__input{
+        padding: 0 1px;
+        vertical-align: top;
+        height: 100%;
+        width: calc(100% - 25px);
+        border: none;
+        outline: none;
+        background-color: transparent;
+        @include def_font(14px,300);
+        color: $c-blue-l;
+      }
+      &__btn{
+        float: right;
+        display: inline-block;
+        height: 100%;
+        width: 18px;
+        background: url("../assets/img/ico/ico_search.png")no-repeat center;
+        background-size: contain;
+        cursor: pointer;
+        &:hover{
+          opacity: 0.7;
+        }
+        input{
+          display: none;
+        }
+      }
+    }
+  }
+}

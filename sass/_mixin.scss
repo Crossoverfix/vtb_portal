@@ -1,0 +1,5 @@
+@mixin def_font($siz,$wig){
+  font-family: Arial;
+  font-size: $siz;
+  font-weight: $wig;
+}
