@@ -111,7 +111,6 @@
     &__nav{
       margin-bottom: auto;
       padding-bottom: 20px;
-      border-bottom: 1px solid #e6e8f2;
       &__rubric{
         margin: 0 0 40px 0;
         padding: 0;
@@ -136,6 +135,8 @@
         width: 100%;
         align-items: flex-start;
         justify-content: flex-start;
+        padding-bottom: 20px;
+        border-bottom: 1px solid #e6e8f2;
         a{
           @include def_font(12px,400);
           color: $c-blue;
@@ -680,6 +681,9 @@
           min-height: 1px;
           padding-top: 58%;
           margin-bottom: 20px;
+          background-size: cover!important;
+          background-position: center!important;
+          background-repeat: no-repeat!important;
         }
         &__title{
           margin-top: 0;
@@ -693,6 +697,151 @@
           }
         }
       }
+    }
+  }
+}
+.choice{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  align-items: stretch;
+  justify-content: space-between;
+  padding-top: 30px;
+  padding-bottom: 30px;
+  border-bottom: 1px solid #e6e8f2;
+  position: relative;
+  width: 100%;
+  &__select{
+    width: calc((100% - 90px) / 4);
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    align-items: stretch;
+    justify-content: flex-start;
+    flex-shrink: 0;
+    &__btn{
+      display: inline-block;
+      width: 30px;
+      height: 30px;
+      align-self: center;
+      border-radius: 50%;
+      overflow: hidden;
+      position: relative;
+      padding: 9px;
+      background-color: #e6eefb;
+      z-index: 2;
+      flex-shrink: 0;
+      &:hover{
+        background-color: #009fdf;
+      }
+      i{
+        display: inline-block;
+        width: 100%;
+        height: 100%;
+      }
+      &.btn{
+        &-prev{
+          &:hover{
+            i{
+              background: url("../assets/img/ico/ico_prev_w.png");
+            }
+          }
+          i{
+            background: url("../assets/img/ico/ico_prev.png");
+          }
+        }
+        &-next{
+          &:hover{
+            i{
+              background: url("../assets/img/ico/ico_next_w.png");
+            }
+          }
+          i{
+            background: url("../assets/img/ico/ico_next.png");
+          }
+        }
+      }
+    }
+    &__wrap{
+      overflow: hidden;
+      white-space: nowrap;
+      position: relative;
+      &__card{
+        width: calc(100% - 30px);
+        margin: 0 15px;
+        display: inline-block;
+        &__img{
+          width: 100%;
+          position: relative;
+          max-height: 220px;
+          background-color: #e6eefb;
+          overflow: hidden;
+          margin-bottom: 20px;
+          a{
+            display: inline-block;
+            width: 100%;
+            height: 100%;
+            position: relative;
+            img{
+              width: 100%;
+            }
+          }
+        }
+        &__info{
+          display: flex;
+          flex-direction: row;
+          flex-wrap: nowrap;
+          width: 100%;
+          align-self: flex-start;
+          justify-content: flex-start;
+          &__text{
+            width: calc(50% - 10px);
+            white-space: normal;
+            margin: 0;
+            &__number{
+              @include def_font(18px,500);
+              line-height: 18px;
+              color: $c-text-d;
+            }
+            &__year{
+              @include def_font(11px,400);
+              line-height: 11px;
+              color: $c-text-d;
+            }
+            span{
+              width: 100%;
+              display: inline-block;
+            }
+          }
+          &__link{
+            width: calc(50% + 10px);
+            white-space: normal;
+            @include def_font(12px,400);
+            color: $c-blue;
+            line-height: 14px;
+            text-decoration: none;
+            &:hover{
+              color: $c-blue-3;
+            }
+          }
+        }
+      }
+    }
+  }
+  &__banner{
+    width: 100%;
+    margin-left: 30px;
+    flex-grow: 1;
+    background-color: #e6eefb;
+    position: relative;
+    &__item{
+      display: inline-block;
+      text-decoration: none;
+      width: 100%;
+      height: 100%;
+      background-size: cover!important;
+      background-position: left center!important;
+      background-repeat: no-repeat!important;
     }
   }
 }
