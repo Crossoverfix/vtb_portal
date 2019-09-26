@@ -28,16 +28,14 @@
                     <p class="header__wrap__date__year">Июнь 2019</p>
                 </div>
             </div>
-            <div class="container-small">
-                <form class="header-search">
-                    <div class="header-search__body">
-                        <input class="header-search__body__input" type="text" name="search" placeholder="Поиск" autocomplete="off">
-                        <label class="header-search__body__btn">
-                            <input type="submit" name="ok">
-                        </label>
-                    </div>
-                </form>
-            </div>
+            <form class="container-small header-search">
+                <div class="header-search__body">
+                    <input class="header-search__body__input" type="text" name="search" placeholder="Поиск" autocomplete="off">
+                    <label class="header-search__body__btn">
+                        <input type="submit" name="ok">
+                    </label>
+                </div>
+            </form>
         </div>
     </div>
 </header>
@@ -67,37 +65,41 @@
             </div>
         </div>
         <div class="hot__bar">
-            <p class="hot__bar__title">Рубрики</p>
-            <nav class="hot__bar__nav">
-                <ul class="hot__bar__nav__rubric">
-                    <li>
-                        <a href="#">Команда</a>
-                    </li>
-                    <li>
-                        <a href="#">Карьера</a>
-                    </li>
-                    <li>
-                        <a href="#">Интервью</a>
-                    </li>
-                    <li>
-                        <a href="#">Трансформация</a>
-                    </li>
-                    <li>
-                        <a href="#">Спорт</a>
-                    </li>
-                    <li>
-                        <a href="#">Культура</a>
-                    </li>
-                </ul>
-                <div class="hot__bar__nav__group">
-                    <a href="#">Все рубрики</a>
-                    <a href="#">Содержание номера</a>
-                </div>
-            </nav>
-            <p class="hot__bar__title">От первого лица</p>
-            <div class="hot__bar__user">
-                <p>Приоритеты нашей стратегии</p>
-                <div class="hot__bar__user__avatar" style="background: url('assets/img/photo/avatar_hot.jpg')"></div>
+            <div class="hot__bar__wrap">
+                <p class="hot__bar__title">Рубрики</p>
+                <nav class="hot__bar__nav">
+                    <ul class="hot__bar__nav__rubric">
+                        <li>
+                            <a href="#">Команда</a>
+                        </li>
+                        <li>
+                            <a href="#">Карьера</a>
+                        </li>
+                        <li>
+                            <a href="#">Интервью</a>
+                        </li>
+                        <li>
+                            <a href="#">Трансформация</a>
+                        </li>
+                        <li>
+                            <a href="#">Спорт</a>
+                        </li>
+                        <li>
+                            <a href="#">Культура</a>
+                        </li>
+                    </ul>
+                    <div class="hot__bar__nav__group">
+                        <a href="#">Все рубрики</a>
+                        <a href="#">Содержание номера</a>
+                    </div>
+                </nav>
+            </div>
+            <div class="hot__bar__wrap">
+                <p class="hot__bar__title">От первого лица</p>
+                <a href="#" class="hot__bar__user">
+                    <p>Приоритеты нашей стратегии</p>
+                    <div class="hot__bar__user__avatar" style="background: url('assets/img/photo/avatar_hot.jpg')"></div>
+                </a>
             </div>
         </div>
     </div>

@@ -102,6 +102,9 @@
     flex-direction: column;
     align-items: flex-start;
     justify-content: flex-start;
+    &__wrap{
+      position: relative;
+    }
     &__title{
       margin-top: 0;
       margin-bottom: 20px;
@@ -158,6 +161,12 @@
       justify-content: space-between;
       position: relative;
       width: 100%;
+      text-decoration: none;
+      &:hover{
+        p{
+          color: $c-blue-3;
+        }
+      }
       p{
         text-align: left;
         @include def_font(18px,300);
