@@ -36,40 +36,12 @@
                     </label>
                 </div>
             </form>
-
-        </div>
-    </div>
-</header>
-<main class="container-fluid">
-    <div class="hot">
-        <div class="hot__content">
-            <div class="hot__content__bg" style="background: url('assets/img/photo/hot_bg.jpg')"></div>
-            <div class="hot__content__info">
-                <p class="hot__content__info__type">Тема номера</p>
-                <p class="hot__content__info__title">Наблюдательный совет Банка ВТБ утвердил новую стратегию Группы до 2020 года</p>
-                <p class="hot__content__info__text">Дорожим клиентом, работаем в команде, отвечаем за результат, проявляем инициативу, совершенствуемся постоянно.</p>
-                <a href="#" class="hot__content__info__link">Читать дальше</a>
-                <div class="hot__content__info__social">
-                    <div>
-                        <i class="ico ico__like"></i>
-                        <span>5</span>
-                    </div>
-                    <div>
-                        <i class="ico ico__comment"></i>
-                        <span>7</span>
-                    </div>
-                    <div>
-                        <i class="ico ico__watch"></i>
-                        <span>37</span>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div class="hot__bar">
-            <div class="hot__bar__wrap">
-                <p class="hot__bar__title">Рубрики</p>
-                <nav class="hot__bar__nav">
-                    <ul class="hot__bar__nav__rubric">
+            <input type="checkbox" id="collapse-menu">
+            <label for="collapse-menu" class="header-nav__btn"><i class="ico"></i></label>
+            <div class="container-small header-nav">
+                <nav class="header-nav__wrap">
+                    <p class="header-nav__title">Рубрики</p>
+                    <ul class="header-nav__list">
                         <li>
                             <a href="#">Команда</a>
                         </li>
@@ -80,430 +52,237 @@
                             <a href="#">Интервью</a>
                         </li>
                         <li>
-                            <a href="#">Трансформация</a>
+                            <a href="#" class="active">Трансформация</a>
                         </li>
                         <li>
                             <a href="#">Спорт</a>
                         </li>
                         <li>
-                            <a href="#">Культура</a>
+                            <a href="#">Награды</a>
+                        </li>
+                        <li>
+                            <a href="#">События</a>
+                        </li>
+                        <li>
+                            <a href="#">Назначения</a>
+                        </li>
+                        <li>
+                            <a href="#">Инфографика</a>
+                        </li>
+                        <li>
+                            <a href="#">Фотофакт</a>
+                        </li>
+                        <li>
+                            <a href="#">Клуб привилегий</a>
+                        </li>
+                        <li>
+                            <a href="#">От первого лица</a>
+                        </li>
+                        <li>
+                            <a href="#">Тема номера</a>
                         </li>
                     </ul>
-                    <div class="hot__bar__nav__group">
-                        <a href="#">Все рубрики</a>
-                        <a href="#">Содержание номера</a>
-                    </div>
+                    <a class="header-nav__link" href="#">Содержание номера</a>
                 </nav>
             </div>
-            <div class="hot__bar__wrap">
-                <p class="hot__bar__title">От первого лица</p>
-                <a href="#" class="hot__bar__user">
-                    <p>Приоритеты нашей стратегии</p>
-                    <div class="hot__bar__user__avatar" style="background: url('assets/img/photo/avatar_hot.jpg')"></div>
-                </a>
-            </div>
         </div>
     </div>
-    <div class="articles">
-        <div class="articles__card">
-            <div class="articles__card__bg" style="background: url('assets/img/photo/articles_bg_1.jpg')"></div>
-            <p class="articles__card__type">Трансформация</p>
-            <a href="#" class="articles__card__title">Путь к клиенту</a>
-            <p class="articles__card__text">В Банке ВТБ начался переход на новую систему организации работ – сервисную модель.</p>
-            <div class="articles__card__social">
-                <div>
-                    <i class="ico ico__like"></i>
-                    <span>5</span>
-                </div>
-                <div>
-                    <i class="ico ico__comment"></i>
-                    <span>7</span>
-                </div>
-                <div>
-                    <i class="ico ico__watch"></i>
-                    <span>37</span>
-                </div>
-            </div>
+</header>
+<main class="container-fluid">
+    <div class="container">
+        <div class="breadcrumb">
+            <ul>
+                <li>
+                    <a href="#">Главная</a>
+                </li>
+                <li>
+                    <a href="#">Трансформация</a>
+                </li>
+                <li>
+                    <a href="#">Бережливый квест</a>
+                </li>
+            </ul>
         </div>
-        <div class="articles__card">
-            <div class="articles__card__bg" style="background: url('assets/img/photo/articles_bg_2.jpg')"></div>
-            <p class="articles__card__type">Интервью</p>
-            <a href="#" class="articles__card__title">Помогая бизнесу делом</a>
-            <p class="articles__card__text">Запросы клиентов непрерывно растут, а банки стремятся им соответствовать.</p>
-            <div class="articles__card__social">
-                <div>
-                    <i class="ico ico__like"></i>
-                    <span>5</span>
-                </div>
-                <div>
-                    <i class="ico ico__comment"></i>
-                    <span>7</span>
-                </div>
-                <div>
-                    <i class="ico ico__watch"></i>
-                    <span>37</span>
-                </div>
+        <div class="article-open">
+            <h3 class="article-open__general-title">Бережливый квест</h3>
+            <p class="article-open__text">
+                Японская система отказа от всего лишнего в бизнес процессах хорошо показала себя в Банковской системе. На чем строится <a href="#">«Бережливый» подход,</a> рассказала Елена Туманова, советник департамента операционной поддержки Бизнеса Банка ВТБ.
+            </p>
+            <div class="article-open__img">
+                <img align="img" src="#">
+                <span class="article-open__img__descript">Бережливый квест</span>
             </div>
-        </div>
-        <div class="articles__card">
-            <div class="articles__card__bg" style="background: url('assets/img/photo/articles_bg_3.jpg')"></div>
-            <p class="articles__card__type">Команда</p>
-            <a href="#" class="articles__card__title">Значимый вклад: награждение лучших сотрудников группы ВТБ</a>
-            <p class="articles__card__text">Церемония вручения «Отличник ВТБ» состоялась в башне «Федерация» в Москва Сити</p>
-            <div class="articles__card__social">
-                <div>
-                    <i class="ico ico__like"></i>
-                    <span>5</span>
-                </div>
-                <div>
-                    <i class="ico ico__comment"></i>
-                    <span>7</span>
-                </div>
-                <div>
-                    <i class="ico ico__watch"></i>
-                    <span>37</span>
-                </div>
-            </div>
-        </div>
-    </div>
-    <div class="preview">
-        <div class="preview__content">
-            <div class="preview__content__bg" style="background: url('assets/img/photo/preview_bg.jpg')"></div>
-            <div class="preview__content__control">
-                <a href="#" class="preview__content__control__btn btn-prev"><i class="ico"></i></a>
-                <a href="#" class="preview__content__control__btn btn-next"><i class="ico"></i></a>
-            </div>
-            <div class="preview__content__info">
-                <p class="preview__content__info__type">Фотофакт</p>
-                <p class="preview__content__info__title">Годовое общее собрание акционеров ВТБ</p>
-                <div class="preview__content__info__social">
-                    <div>
-                        <i class="ico ico__like_w"></i>
-                        <span>5</span>
-                    </div>
-                    <div>
-                        <i class="ico ico__comment_w"></i>
-                        <span>7</span>
-                    </div>
-                    <div>
-                        <i class="ico ico__watch_w"></i>
-                        <span>37</span>
+            <p class="article-open__text">
+                Базовые принципы Lean сформулированы в 1950 году основоположником системы Тайити Оно, японским инженером и руководителем компании «Тойота Босёку». Основная идея методологии постоянное совершенствование бизнеса за счет устранения процессов, не добавляющих ценности продукту или услуге.
+            </p>
+            <div class="article-open__block">
+                <div class="article-open__block__user">
+                    <div class="article-open__block__user__img" style="background: url('assets/img/photo/')"></div>
+                    <div class="article-open__block__user__info">
+                        <p class="article-open__block__user__name">Елена Туманова</p>
+                        <p class="article-open__block__user__post">советник департамента операционной поддержки Бизнеса Банка ВТБ</p>
                     </div>
                 </div>
-            </div>
-        </div>
-        <div class="preview__optional">
-            <p class="preview__optional__title">Инфографика</p>
-            <a href="#" class="preview__optional__link">
-                <img src="assets/img/photo/info_bg.jpg" align="photo">
-            </a>
-        </div>
-    </div>
-    <div class="preview">
-        <div class="preview__content">
-            <div class="preview__content__bg" style="background: url('assets/img/photo/preview_bg.jpg')"></div>
-            <div class="preview__content__control">
-                <a href="#" class="preview__content__control__btn btn-prev"><i class="ico"></i></a>
-                <a href="#" class="preview__content__control__btn btn-next"><i class="ico"></i></a>
-            </div>
-            <div class="preview__content__info">
-                <p class="preview__content__info__type">Фотофакт</p>
-                <p class="preview__content__info__title">Годовое общее собрание акционеров ВТБ</p>
-                <div class="preview__content__info__social">
-                    <div>
-                        <i class="ico ico__like_w"></i>
-                        <span>5</span>
-                    </div>
-                    <div>
-                        <i class="ico ico__comment_w"></i>
-                        <span>7</span>
-                    </div>
-                    <div>
-                        <i class="ico ico__watch_w"></i>
-                        <span>37</span>
-                    </div>
+                <div class="article-open__block__quote">
+                    <p class="article-open__block__quote__text">Начинать что-то новое всегда сложно, но очень интересно. Важно донести идею, что Lean это просто и перспективно. Образно говоря, нужно заразить сотрудников оптимизмом и верой в успех. Без этого никак.</p>
                 </div>
             </div>
-        </div>
-    </div>
-    <div class="compilation">
-        <div class="compilation__content">
-            <div class="compilation__content__card">
-                <a href="#" class="compilation__content__card__bg" style="background: url('assets/img/photo/compilation_bg_1.jpg')"></a>
-                <div class="compilation__content__card__info">
-                    <p class="compilation__content__card__info__type">Технологии</p>
-                    <a href="#" class="compilation__content__card__info__title">Гарантии на блокчейне</a>
-                    <p class="compilation__content__card__info__text">Как на основе новой технологии создается система для выдачи банковских гарантий?</p>
-                    <div class="compilation__content__card__info__social">
-                        <div>
-                            <i class="ico ico__like"></i>
-                            <span>5</span>
-                        </div>
-                        <div>
-                            <i class="ico ico__comment"></i>
-                            <span>7</span>
-                        </div>
-                        <div>
-                            <i class="ico ico__watch"></i>
-                            <span>37</span>
-                        </div>
-                    </div>
-                    <p class="compilation__content__card__info__date">Вчера</p>
+            <p class="article-open__text">
+                В рамках системы мотивации результаты сотрудников обязательно фиксируются и транслируются в качестве
+                «лучших практик». Мы всегда ждем и приветствуем обратную связь, активное общение, новые предложения.
+            </p>
+            <h3 class="article-open__title">Культура изменений</h3>
+            <p class="article-open__text">
+                <b>«Lean проект»</b> это крупный проект с эффектом более 1 млн рублей. Он чаще затрагивает ключевые или сквозные процессы департамента. Для реализации этого проекта требуется согласование руководителя и управляющего комитета ДОПБ по развитию.
+            </p>
+            <p class="article-open__text">
+                <b>«Kaizen проект»</b> проекты быстрых улучшений с экономическим эффектом менее 1 млн рублей. Для реализации этих идей не требуется прямое согласование руководителя департамента.
+            </p>
+            <div class="article-open__slider">
+                <div class="article-open__slider__body">
+                    <div class="article-open__slider__body__control"></div>
+                    <div class="article-open__slider__body__wrap"></div>
+                </div>
+                <span class="article-open__slider__descript">Бережливый квест</span>
+            </div>
+            <p class="article-open__text">
+                В 2016 году формализовали у себя институт «Lean лидерство», где Lean лидер это сотрудник управления ДОПБ, отлично владеющий инструментами и методологией постоянных улучшений, он же наставник и проводник философии Lean.
+            </p>
+            <p class="article-open__text">
+                Сейчас в департаменте 25 таких лидеров, каждый из которых успешно координирует работу по проектам внутри своего управления, проводит тематические встречи, дает обратную связь, консультирует сотрудников.
+            </p>
+            <div class="article-open__present">
+                <div class="article-open__present__block">
+                    <p class="article-open__present__block__value">200</p>
+                    <p class="article-open__present__block__position">проектов</p>
+                </div>
+                <div class="article-open__present__block">
+                    <p class="article-open__present__block__value">300 000 000</p>
+                    <p class="article-open__present__block__position">рублей</p>
+                </div>
+                <div class="article-open__present__block">
+                    <p class="article-open__present__block__value">12</p>
+                    <p class="article-open__present__block__position">месяцев</p>
                 </div>
             </div>
-            <div class="compilation__content__card">
-                <a href="#" class="compilation__content__card__bg" style="background: url('assets/img/photo/compilation_bg_2.jpg')"></a>
-                <div class="compilation__content__card__info">
-                    <p class="compilation__content__card__info__type">Инвестиции</p>
-                    <a href="#" class="compilation__content__card__info__title">Начните зарабатывать уже сейчас</a>
-                    <p class="compilation__content__card__info__text">Индивидуальный инвестиционный счет позволяет получать до 52 000 рублей в год</p>
-                    <div class="compilation__content__card__info__social">
-                        <div>
-                            <i class="ico ico__like"></i>
-                            <span>5</span>
-                        </div>
-                        <div>
-                            <i class="ico ico__comment"></i>
-                            <span>7</span>
-                        </div>
-                        <div>
-                            <i class="ico ico__watch"></i>
-                            <span>37</span>
-                        </div>
-                    </div>
-                    <p class="compilation__content__card__info__date">7 дней назад</p>
-                </div>
-            </div>
-            <div class="compilation__content__card">
-                <a href="#" class="compilation__content__card__bg" style="background: url('assets/img/photo/compilation_bg_3.jpg')"></a>
-                <div class="compilation__content__card__info">
-                    <p class="compilation__content__card__info__type">Трансформация</p>
-                    <a href="#" class="compilation__content__card__info__title">Бережливый квест</a>
-                    <p class="compilation__content__card__info__text">Елена Туманова рассказала о японской системе отказа от всего лишнего в бизнес процессах</p>
-                    <div class="compilation__content__card__info__social">
-                        <div>
-                            <i class="ico ico__like"></i>
-                            <span>5</span>
-                        </div>
-                        <div>
-                            <i class="ico ico__comment"></i>
-                            <span>7</span>
-                        </div>
-                        <div>
-                            <i class="ico ico__watch"></i>
-                            <span>37</span>
-                        </div>
-                    </div>
-                    <p class="compilation__content__card__info__date">2 дня назад</p>
-                </div>
-            </div>
-            <div class="compilation__content__card">
-                <a href="#" class="compilation__content__card__bg" style="background: url('assets/img/photo/compilation_bg_4.jpg')"></a>
-                <div class="compilation__content__card__info">
-                    <p class="compilation__content__card__info__type">Инфографика</p>
-                    <a href="#" class="compilation__content__card__info__title">5 приоритетов развития</a>
-                    <p class="compilation__content__card__info__text">Цифровизация бизнеса, скорость реакции на изменения рынка, построение технологической платформы</p>
-                    <div class="compilation__content__card__info__social">
-                        <div>
-                            <i class="ico ico__like"></i>
-                            <span>5</span>
-                        </div>
-                        <div>
-                            <i class="ico ico__comment"></i>
-                            <span>7</span>
-                        </div>
-                        <div>
-                            <i class="ico ico__watch"></i>
-                            <span>37</span>
-                        </div>
-                    </div>
-                    <p class="compilation__content__card__info__date">3 дня назад</p>
-                </div>
-            </div>
-            <a href="#" class="compilation__link">Все статьи </a>
-        </div>
-        <div class="compilation__optional">
-            <div class="compilation__optional__card">
-                <div class="compilation__optional__card__bg" style="background: url('assets/img/photo/compilation_optional_bg_1.jpg')"></div>
-                <p class="compilation__optional__card__type">Спорт</p>
-                <a href="#" class="compilation__optional__card__title">Велокультура: при поддержке Банка ВТБ создан городской велопрокат</a>
-            </div>
-            <div class="compilation__optional__card">
-                <div class="compilation__optional__card__bg" style="background: url('assets/img/photo/compilation_optional_bg_2.jpg')"></div>
-                <p class="compilation__optional__card__type">Культура</p>
-                <a href="#" class="compilation__optional__card__title">Репин: открылась самая ожидаемая выставка этого года</a>
-            </div>
-            <div class="compilation__optional__card">
-                <div class="compilation__optional__card__bg" style="background: url('assets/img/photo/compilation_optional_bg_3.jpg')"></div>
-                <p class="compilation__optional__card__type">Календарь</p>
-                <a href="#" class="compilation__optional__card__title">Афиша: культурные события июля и августа</a>
-            </div>
-            <a href="#" class="compilation__link">Все статьи </a>
-        </div>
-    </div>
-    <div class="compilation">
-        <div class="compilation__content">
-            <div class="compilation__content__card">
-                <a href="#" class="compilation__content__card__bg" style="background: url('assets/img/photo/compilation_bg_1.jpg')"></a>
-                <div class="compilation__content__card__info">
-                    <p class="compilation__content__card__info__type">Технологии</p>
-                    <a href="#" class="compilation__content__card__info__title">Гарантии на блокчейне</a>
-                    <p class="compilation__content__card__info__text">Как на основе новой технологии создается система для выдачи банковских гарантий?</p>
-                    <div class="compilation__content__card__info__social">
-                        <div>
-                            <i class="ico ico__like"></i>
-                            <span>5</span>
-                        </div>
-                        <div>
-                            <i class="ico ico__comment"></i>
-                            <span>7</span>
-                        </div>
-                        <div>
-                            <i class="ico ico__watch"></i>
-                            <span>37</span>
-                        </div>
-                    </div>
-                    <p class="compilation__content__card__info__date">Вчера</p>
-                </div>
-            </div>
-            <div class="compilation__content__card">
-                <a href="#" class="compilation__content__card__bg" style="background: url('assets/img/photo/compilation_bg_2.jpg')"></a>
-                <div class="compilation__content__card__info">
-                    <p class="compilation__content__card__info__type">Инвестиции</p>
-                    <a href="#" class="compilation__content__card__info__title">Начните зарабатывать уже сейчас</a>
-                    <p class="compilation__content__card__info__text">Индивидуальный инвестиционный счет позволяет получать до 52 000 рублей в год</p>
-                    <div class="compilation__content__card__info__social">
-                        <div>
-                            <i class="ico ico__like"></i>
-                            <span>5</span>
-                        </div>
-                        <div>
-                            <i class="ico ico__comment"></i>
-                            <span>7</span>
-                        </div>
-                        <div>
-                            <i class="ico ico__watch"></i>
-                            <span>37</span>
-                        </div>
-                    </div>
-                    <p class="compilation__content__card__info__date">7 дней назад</p>
-                </div>
-            </div>
-            <div class="compilation__content__card">
-                <a href="#" class="compilation__content__card__bg" style="background: url('assets/img/photo/compilation_bg_3.jpg')"></a>
-                <div class="compilation__content__card__info">
-                    <p class="compilation__content__card__info__type">Трансформация</p>
-                    <a href="#" class="compilation__content__card__info__title">Бережливый квест</a>
-                    <p class="compilation__content__card__info__text">Елена Туманова рассказала о японской системе отказа от всего лишнего в бизнес процессах</p>
-                    <div class="compilation__content__card__info__social">
-                        <div>
-                            <i class="ico ico__like"></i>
-                            <span>5</span>
-                        </div>
-                        <div>
-                            <i class="ico ico__comment"></i>
-                            <span>7</span>
-                        </div>
-                        <div>
-                            <i class="ico ico__watch"></i>
-                            <span>37</span>
-                        </div>
-                    </div>
-                    <p class="compilation__content__card__info__date">2 дня назад</p>
-                </div>
-            </div>
-            <div class="compilation__content__card">
-                <a href="#" class="compilation__content__card__bg" style="background: url('assets/img/photo/compilation_bg_4.jpg')"></a>
-                <div class="compilation__content__card__info">
-                    <p class="compilation__content__card__info__type">Инфографика</p>
-                    <a href="#" class="compilation__content__card__info__title">5 приоритетов развития</a>
-                    <p class="compilation__content__card__info__text">Цифровизация бизнеса, скорость реакции на изменения рынка, построение технологической платформы</p>
-                    <div class="compilation__content__card__info__social">
-                        <div>
-                            <i class="ico ico__like"></i>
-                            <span>5</span>
-                        </div>
-                        <div>
-                            <i class="ico ico__comment"></i>
-                            <span>7</span>
-                        </div>
-                        <div>
-                            <i class="ico ico__watch"></i>
-                            <span>37</span>
-                        </div>
-                    </div>
-                    <p class="compilation__content__card__info__date">3 дня назад</p>
-                </div>
-            </div>
-            <a href="#" class="compilation__link">Все статьи </a>
-        </div>
-    </div>
-    <div class="event">
-        <div class="event__body">
-            <div class="event__body__head">
-                <p class="event__body__head__title">События и назначения</p>
-            </div>
-            <div class="event__body__control">
-                <a href="#" class="event__body__control__btn btn-prev"><i class="ico"></i></a>
-                <a href="#" class="event__body__control__btn btn-next"><i class="ico"></i></a>
-            </div>
-            <div class="event__body__wrap">
-                <div class="event__body__wrap__card">
-                    <div class="event__body__wrap__card__bg" style="background: url('assets/img/photo/event_bg_1.jpg')"></div>
-                    <a href="#" class="event__body__wrap__card__title">1 июля стартовала программа стажировок ВТБ Юниор</a>
-                </div>
-                <div class="event__body__wrap__card">
-                    <div class="event__body__wrap__card__bg" style="background: url('assets/img/photo/event_bg_2.jpg')"></div>
-                    <a href="#" class="event__body__wrap__card__title">Олег Барков назначен новым генеральным директором ВТБ Недвижимость</a>
-                </div>
-                <div class="event__body__wrap__card">
-                    <div class="event__body__wrap__card__bg" style="background: url('assets/img/photo/event_bg_3.jpg')"></div>
-                    <a href="#" class="event__body__wrap__card__title">ВТБ техэкспо : члены правления банка оценили внутренние технологические разработки</a>
-                </div>
-                <div class="event__body__wrap__card">
-                    <div class="event__body__wrap__card__bg" style="background: url('assets/img/photo/event_bg_4.jpg')"></div>
-                    <a href="#" class="event__body__wrap__card__title">Ольга Мамедова назначена руководителем департамента по работе с обращениями клиентов</a>
-                </div>
-            </div>
-        </div>
-    </div>
-    <div class="choice">
-        <div class="choice__select">
-            <a href="#" class="choice__select__btn btn-prev"><i class="ico"></i></a>
-            <div class="choice__select__wrap">
-                <div class="choice__select__wrap__card">
-                    <div class="choice__select__wrap__card__img">
-                        <a href="#">
-                            <img align="picture" src="assets/img/photo/choice_card.jpg">
-                        </a>
-                    </div>
-                    <div class="choice__select__wrap__card__info">
-                        <p class="choice__select__wrap__card__info__text">
-                            <span class="choice__select__wrap__card__info__text__number">№27</span>
-                            <span class="choice__select__wrap__card__info__text__year">Июнь 2019</span>
-                        </p>
-                        <a href="#" class="choice__select__wrap__card__info__link">Все предыдущие выпуски</a>
+            <div class="article-open__block">
+                <div class="article-open__block__user">
+                    <div class="article-open__block__user__info">
+                        <p class="article-open__block__user__name">Елена Туманова</p>
+                        <p class="article-open__block__user__post">советник департамента операционной поддержки Бизнеса Банка ВТБ</p>
                     </div>
                 </div>
-                <div class="choice__select__wrap__card">
-                    <div class="choice__select__wrap__card__img">
-                        <a href="#">
-                            <img align="picture" src="assets/img/photo/choice_card.jpg">
-                        </a>
-                    </div>
-                    <div class="choice__select__wrap__card__info">
-                        <p class="choice__select__wrap__card__info__text">
-                            <span class="choice__select__wrap__card__info__text__number">№27</span>
-                            <span class="choice__select__wrap__card__info__text__year">Июнь 2019</span>
-                        </p>
-                        <a href="#" class="choice__select__wrap__card__info__link">Все предыдущие выпуски</a>
-                    </div>
+                <div class="article-open__block__quote">
+                    <p class="article-open__block__quote__text">Нам удалось создать внутреннюю корпоративную культуру изменений, среду, где сотрудник может найти применение своим знаниям и получить обратную связь.</p>
                 </div>
             </div>
-            <a href="#" class="choice__select__btn btn-next"><i class="ico"></i></a>
-        </div>
-        <div class="choice__banner">
-            <div class="choice__banner__item" style="background: url('assets/img/photo/banner_bg.jpg')"></div>
+            <h3 class="article-open__title">7 ключевых потерь в бизнес-процессах</h3>
+            <ol class="article-open__number-list">
+                <li>Перепроизводство</li>
+                <li>Лишнее ожидание</li>
+                <li>Лишняя транспортировка</li>
+                <li>Лишние перемещения персонала по офису</li>
+                <li>Лишние запасы</li>
+                <li>Лишняя обработка продукта</li>
+                <li>Исправления брака</li>
+            </ol>
+            <div class="article-open__block">
+                <p class="article-open__block__title">Справка</p>
+                <div class="article-open__block__content">
+                    <div class="article-open__block__content__img">
+                        <img alt="img" src="#">
+                    </div>
+                    <p class="article-open__block__content__text"><b>Lean Six Sigma</b> — методология, объединяющая в себе подходы Lean и Six Sigma, где последняя это концепция управления производством, предполагающая улучшение качества каждого из процессов, минимизацию дефектов и статистических отклонений.</p>
+                </div>
+            </div>
+            <p class="article-open__text">
+                Экономический эффект рассчитываем достаточно просто: по объему освободившегося времени операций, функционала, в рамках стандартизации и упрощения процессов, устранения «узких» мест. Степень повышения эффективности процессов зависит от многих составляющих и варьируется от 10-15% до 40-50%.
+            </p>
+            <h3 class="article-open__title">Инструменты Lean</h3>
+            <ul class="article-open__list">
+                <li>Потери и их анализ</li>
+                <li>Value Stream Mapping</li>
+                <li>Визуальный менеджмент</li>
+                <li>Система организации рабочего пространства</li>
+            </ul>
+            <h3 class="article-open__title">Основные показатели</h3>
+            <div class="article-open__indicators">
+                <div class="article-open__indicators__row focus-row">
+                    <div class="article-open__indicators__cell cell-1">
+                        <p>Сэкономленные ресурсы</p>
+                    </div>
+                    <div class="article-open__indicators__cell cell-2">
+                        <p>2018</p>
+                    </div>
+                    <div class="article-open__indicators__cell cell-3">
+                        <p>2019</p>
+                    </div>
+                    <div class="article-open__indicators__cell cell-4">
+                        <p>Изменение</p>
+                    </div>
+                </div>
+                <div class="article-open__indicators__row">
+                    <div class="article-open__indicators__cell cell-1">
+                        <p>От перехода на новую модель</p>
+                    </div>
+                    <div class="article-open__indicators__cell cell-2">
+                        <p>101 566</p>
+                    </div>
+                    <div class="article-open__indicators__cell cell-3">
+                        <p>237 846</p>
+                    </div>
+                    <div class="article-open__indicators__cell cell-4">
+                        <p>24%</p>
+                    </div>
+                </div>
+                <div class="article-open__indicators__row">
+                    <div class="article-open__indicators__cell cell-1">
+                        <p>От перехода на новую платформу</p>
+                    </div>
+                    <div class="article-open__indicators__cell cell-2">
+                        <p>87 568</p>
+                    </div>
+                    <div class="article-open__indicators__cell cell-3">
+                        <p>95 683</p>
+                    </div>
+                    <div class="article-open__indicators__cell cell-4">
+                        <p>38%</p>
+                    </div>
+                </div>
+                <p class="article-open__indicators__text">
+                    Базовые знания по проектному управлению сотрудники получают на внутренних семинарах практикумах, кроме этого, нами разработана методология управления внутренними проектами по улучшению в рамках ПС департамента, где в простой форме описаны сценарии управления каждым типом проекта. Подразумевается, что любой сотрудник ДОПБ сможет заполнить форму паспорта проекта и в дальнейшем отчитаться о результатах.
+                </p>
+            </div>
+            <p class="article-open__blue-title">Больше новостей по теме</p>
+            <div class="articles">
+                <div class="articles__card">
+                    <div class="articles__card__bg" style="background: url('assets/img/photo/articles_bg_1.jpg')"></div>
+                    <p class="articles__card__info">
+                        <span class="articles__card__info__type">Трансформация</span>
+                        <span class="articles__card__info__date">№3, июнь 2018</span>
+                    </p>
+                    <a href="#" class="articles__card__title">Путь к клиенту. Переход на сервисную модель</a>
+                    <p class="articles__card__text">В Банке ВТБ начался подготовительный этап перехода на новую систему организации работ – сервисную модель.</p>
+                </div>
+                <div class="articles__card">
+                    <div class="articles__card__bg" style="background: url('assets/img/photo/articles_bg_1.jpg')"></div>
+                    <p class="articles__card__info">
+                        <span class="articles__card__info__type">Трансформация</span>
+                        <span class="articles__card__info__date">№3, июнь 2018</span>
+                    </p>
+                    <a href="#" class="articles__card__title">Как работать в кросс-функциональной группе</a>
+                    <p class="articles__card__text">Работа в кросс-функциональной группе действует по принципам гибкой методологии разработки.</p>
+                </div>
+                <div class="articles__card">
+                    <div class="articles__card__bg" style="background: url('assets/img/photo/articles_bg_1.jpg')"></div>
+                    <p class="articles__card__info">
+                        <span class="articles__card__info__type">Трансформация</span>
+                        <span class="articles__card__info__date">№3, июнь 2018</span>
+                    </p>
+                    <a href="#" class="articles__card__title">Новые бизнес требования</a>
+                    <p class="articles__card__text">Использование структурированных цифровых документов, автоматизация процессов, конфиденциальность, разграничение прав доступа и интуитивно понятный интерфейс.</p>
+                </div>
+            </div>
         </div>
     </div>
 </main>
