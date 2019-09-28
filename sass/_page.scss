@@ -1,3 +1,50 @@
+.breadcrumb{
+  width: 100%;
+  padding-top: 30px;
+  padding-bottom: 20px;
+  ul{
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    align-items: flex-start;
+    justify-content: flex-start;
+    li{
+      display: inline-block;
+      position: relative;
+      padding-right: 25px;
+      flex-shrink: 0;
+      &:last-child{
+        &:before{
+          width: 0;
+        }
+      }
+      &:before{
+        content: "";
+        position: absolute;
+        top: 50%;
+        right: 9px;
+        transform: translate(-50%,-50%);
+        width: 4px;
+        height: 6px;
+        background: url("../assets/img/ico/breadcrumb.png")no-repeat center;
+        background-size: contain;
+      }
+      a{
+        display: inline-block;
+        text-decoration: none;
+        @include def_font(12px,400);
+        color: $c-blue-l;
+        vertical-align: top;
+        &:hover{
+          text-decoration: underline;
+        }
+      }
+    }
+  }
+}
 .hot{
   width: 100%;
   padding-top: 30px;
@@ -435,6 +482,7 @@
   padding-top: 30px;
   padding-bottom: 30px;
   border-bottom: 1px solid #e6e8f2;
+  position: relative;
   &__content{
     width: 100%;
     flex-grow: 1;
@@ -501,7 +549,7 @@
           right: 0;
           margin-top: 0;
           margin-bottom: 0;
-          @include def_font(11px,400);
+          @include def_font_cond(11px,400);
           line-height: 11px;
           color: $c-text-d;
         }
@@ -530,6 +578,25 @@
               @include def_font(13px,300);
               color: $c-text-d;
             }
+          }
+        }
+        &__head{
+          width: 100%;
+          display: inline-block;
+          margin-top: 0;
+          margin-bottom: 10px;
+          position: relative;
+          span{
+            display: inline-block;
+          }
+          &__type{
+            @include def_font(14px,400);
+            color: $c-blue-3;
+            margin-right: 20px;
+          }
+          &__date{
+            @include def_font_cond(12px,300);
+            color: $c-text-d;
           }
         }
       }
@@ -585,6 +652,24 @@
     text-decoration: none;
     &:hover{
       text-decoration: underline;
+    }
+  }
+  &__btn{
+    display: inline-block;
+    margin: 0 auto;
+    @include def_font(22px,400);
+    color: $c-blue;
+    position: relative;
+    height: 46px;
+    line-height: 46px;
+    vertical-align: middle;
+    padding: 0 30px;
+    border-radius: 23px;
+    background-color: #e6eefb;
+    text-decoration: none;
+    &:hover{
+      color: $c-blue-3;
+      background-color: #dbe4f1;
     }
   }
 }
@@ -808,12 +893,12 @@
             white-space: normal;
             margin: 0;
             &__number{
-              @include def_font(18px,500);
+              @include def_font_cond(18px,500);
               line-height: 18px;
               color: $c-text-d;
             }
             &__year{
-              @include def_font(11px,400);
+              @include def_font_cond(11px,400);
               line-height: 11px;
               color: $c-text-d;
             }
@@ -852,5 +937,66 @@
       background-position: left center!important;
       background-repeat: no-repeat!important;
     }
+  }
+}
+.show-article{
+  display: block;
+  padding-bottom: 30px;
+  border-bottom: 1px solid #e6e8f2;
+  position: relative;
+  width: 100%;
+  &__title{
+    margin-top: 0;
+    @include def_font(42px,500);
+    color: $c-text-d;
+    width: 100%;
+    margin-bottom: 30px;
+  }
+  &__img{
+    position: relative;
+    display: block;
+    width: 100%;
+    min-height: 10px;
+    margin-bottom: 20px;
+    background-color: #e6eefb;
+    img{
+      display: block;
+      width: 100%;
+    }
+  }
+  &__info-head{
+    width: 100%;
+    display: block;
+    margin-bottom: 10px;
+    span{
+      display: inline-block;
+    }
+    &__type{
+      @include def_font(18px,400);
+      color: $c-blue-3;
+      margin-right: 20px;
+    }
+    &__date{
+      @include def_font_cond(14px,300);
+      color: $c-text-d;
+    }
+  }
+  &__info-title{
+    display: inline-block;
+    text-decoration: none;
+    @include def_font(26px,500);
+    color: $c-blue;
+    margin-top: 0;
+    margin-bottom: 15px;
+    &:hover{
+      color: $c-blue-3;
+    }
+  }
+  &__text{
+    margin-top: 0;
+    margin-bottom: 10px;
+    @include def_font(14px,300);
+    color: $c-text-d;
+    width: 100%;
   }
 }

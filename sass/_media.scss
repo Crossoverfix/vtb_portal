@@ -61,6 +61,18 @@
   header{
     padding-top: 146px;
   }
+  .header-nav__wrap{
+    box-shadow: inset 0px 0px 15px 0px rgba(0, 0, 0, 0.11);
+    top: 0;
+    transform: translateY(-100%);
+    transition: all linear 0.3s;
+  }
+  .header-nav__btn{
+    display: block;
+  }
+  .header-nav{
+    right: -100%;
+  }
   .header-search{
     float: none;
     left: 50%;
@@ -181,11 +193,11 @@
 }
 @media screen and (max-width: 767px){
   .container{
-    width: 560px;
-    max-width: 560px;
+    width: 545px;
+    max-width: 545px;
     &-fluid{
-      width: 560px;
-      max-width: 560px;
+      width: 545px;
+      max-width: 545px;
     }
     &-small{
       width: 260px;
@@ -344,6 +356,7 @@
   }
   .header__wrap__name{
     order: 1;
+    width: 100%;
   }
   .header__wrap__name__title{
     font-size: 26px;
@@ -459,5 +472,11 @@
   .footer__body__info__text{
     width: auto;
     display: inline-block;
+  }
+  .header-search{
+    left: 0;
+    transform: translateX(0);
+    width: 220px;
+    max-width: 220px;
   }
 }

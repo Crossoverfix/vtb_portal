@@ -38,7 +38,7 @@
           a{
             text-decoration: none;
             display: inline-block;
-            @include def_font(11px,400);
+            @include def_font_cond(11px,400);
             color: $c-text-d;
             line-height: 11px;
             &:hover{
@@ -84,12 +84,12 @@
         white-space: nowrap;
         text-align: right;
         &__number{
-          @include def_font(18px,500);
+          @include def_font_cond(18px,500);
           color: $c-text-d;
           margin-right: 10px;
         }
         &__year{
-          @include def_font(11px,400);
+          @include def_font_cond(11px,400);
           color: $c-text-d;
         }
         span{
