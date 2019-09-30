@@ -356,6 +356,15 @@
   .article-open__block__content__img{
     width: 160px;
   }
+  .article-open__gallery__row.row__big{
+    height: 340px;
+  }
+  .article-open__gallery__row.row__medium{
+    height: 280px;
+  }
+  .article-open__gallery__row.row__small{
+    height: 200px;
+  }
 }
 @media screen and (max-width: 574px){
   .container{
@@ -507,5 +516,18 @@
   }
   .article-open__block__quote{
     padding: 0 25px;
+  }
+  .article-open__gallery__row{
+    flex-wrap: wrap;
+    height: auto!important;
+    margin-bottom: 0;
+    &__card{
+      width: 100%!important;
+      margin-bottom: 15px;
+      img{
+        width: 100%!important;
+        height: auto;
+      }
+    }
   }
 }
