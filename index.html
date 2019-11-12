@@ -8,6 +8,7 @@
     <meta name="format-detection" content="telephone=no">
     <title>VTB Portal</title>
     <link href="sass/style.css" rel="stylesheet">
+    <script src="assets/js/jquery-3.4.1.js"></script>
 </head>
 <body>
 <header>
@@ -24,8 +25,198 @@
                     <p class="header__wrap__name__sub-title">Онлайн-журнал</p>
                 </div>
                 <div class="header__wrap__date">
-                    <p class="header__wrap__date__number">№27</p>
-                    <p class="header__wrap__date__year">Июнь 2019</p>
+                    <a href="#" class="header__wrap__date__link" data-js-drop="redaction">
+                        <p class="header__wrap__date__number">№27</p>
+                        <p class="header__wrap__date__year">Июнь 2019</p>
+                    </a>
+                    <div class="header__wrap__date__drop">
+                        <ul class="header__wrap__date__drop__year">
+                            <li>
+                                <a href="#" data-js-drop-select="2019">2019</a>
+                            </li>
+                            <li>
+                                <a href="#" data-js-drop-select="2018">2018</a>
+                            </li>
+                            <li>
+                                <a href="#" data-js-drop-select="2017">2017</a>
+                            </li>
+                            <li>
+                                <a href="#" data-js-drop-select="2016">2016</a>
+                            </li>
+                        </ul>
+                        <div class="header__wrap__date__drop__second">
+                            <ul  class="header__wrap__date__drop__redaction" data-js-drop-selected="2019">
+                                <li>
+                                    <a href="#">
+                                        <span class="header__wrap__date__drop__redaction__month">Окт.</span>
+                                        <span class="header__wrap__date__drop__redaction__number">№27</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <span class="header__wrap__date__drop__redaction__month">Сент.</span>
+                                        <span class="header__wrap__date__drop__redaction__number">№26</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <span class="header__wrap__date__drop__redaction__month">Авг.</span>
+                                        <span class="header__wrap__date__drop__redaction__number">№25</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <span class="header__wrap__date__drop__redaction__month">Июль</span>
+                                        <span class="header__wrap__date__drop__redaction__number">№24</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <span class="header__wrap__date__drop__redaction__month">Июнь</span>
+                                        <span class="header__wrap__date__drop__redaction__number">№23</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <span class="header__wrap__date__drop__redaction__month">Май.</span>
+                                        <span class="header__wrap__date__drop__redaction__number">№22</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <span class="header__wrap__date__drop__redaction__month">Апр.</span>
+                                        <span class="header__wrap__date__drop__redaction__number">№21</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <span class="header__wrap__date__drop__redaction__month">Март.</span>
+                                        <span class="header__wrap__date__drop__redaction__number">№20</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <span class="header__wrap__date__drop__redaction__month">Фев.</span>
+                                        <span class="header__wrap__date__drop__redaction__number">№19</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <span class="header__wrap__date__drop__redaction__month">Янв.</span>
+                                        <span class="header__wrap__date__drop__redaction__number">№18</span>
+                                    </a>
+                                </li>
+                            </ul>
+                            <ul  class="header__wrap__date__drop__redaction" data-js-drop-selected="2018">
+                                <li>
+                                    <a href="#">
+                                        <span class="header__wrap__date__drop__redaction__month">Окт.</span>
+                                        <span class="header__wrap__date__drop__redaction__number">№17</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <span class="header__wrap__date__drop__redaction__month">Сент.</span>
+                                        <span class="header__wrap__date__drop__redaction__number">№16</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <span class="header__wrap__date__drop__redaction__month">Авг.</span>
+                                        <span class="header__wrap__date__drop__redaction__number">№15</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <span class="header__wrap__date__drop__redaction__month">Июль</span>
+                                        <span class="header__wrap__date__drop__redaction__number">№14</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <span class="header__wrap__date__drop__redaction__month">Июнь</span>
+                                        <span class="header__wrap__date__drop__redaction__number">№13</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <span class="header__wrap__date__drop__redaction__month">Май.</span>
+                                        <span class="header__wrap__date__drop__redaction__number">№12</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <span class="header__wrap__date__drop__redaction__month">Апр.</span>
+                                        <span class="header__wrap__date__drop__redaction__number">№11</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <span class="header__wrap__date__drop__redaction__month">Март.</span>
+                                        <span class="header__wrap__date__drop__redaction__number">№10</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <span class="header__wrap__date__drop__redaction__month">Фев.</span>
+                                        <span class="header__wrap__date__drop__redaction__number">№9</span>
+                                    </a>
+                                </li>
+                            </ul>
+                            <ul  class="header__wrap__date__drop__redaction" data-js-drop-selected="2017">
+                                <li>
+                                    <a href="#">
+                                        <span class="header__wrap__date__drop__redaction__month">Окт.</span>
+                                        <span class="header__wrap__date__drop__redaction__number">№27</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <span class="header__wrap__date__drop__redaction__month">Сент.</span>
+                                        <span class="header__wrap__date__drop__redaction__number">№26</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <span class="header__wrap__date__drop__redaction__month">Апр.</span>
+                                        <span class="header__wrap__date__drop__redaction__number">№21</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <span class="header__wrap__date__drop__redaction__month">Март.</span>
+                                        <span class="header__wrap__date__drop__redaction__number">№20</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <span class="header__wrap__date__drop__redaction__month">Фев.</span>
+                                        <span class="header__wrap__date__drop__redaction__number">№19</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <span class="header__wrap__date__drop__redaction__month">Янв.</span>
+                                        <span class="header__wrap__date__drop__redaction__number">№18</span>
+                                    </a>
+                                </li>
+                            </ul>
+                            <ul  class="header__wrap__date__drop__redaction" data-js-drop-selected="2016">
+                                <li>
+                                    <a href="#">
+                                        <span class="header__wrap__date__drop__redaction__month">Май.</span>
+                                        <span class="header__wrap__date__drop__redaction__number">№22</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <span class="header__wrap__date__drop__redaction__month">Апр.</span>
+                                        <span class="header__wrap__date__drop__redaction__number">№21</span>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
                 </div>
             </div>
             <form class="container-small header-search">
@@ -44,29 +235,32 @@
         <div class="hot__content">
             <div class="hot__content__bg" style="background: url('assets/img/photo/hot_bg.jpg')"></div>
             <div class="hot__content__info">
-                <p class="hot__content__info__type">Тема номера</p>
+                <div class="hot__content__info__head">
+                    <a href="#" class="hot__content__info__type">Тема номера</a>
+                    <p class="hot__content__info__date">№27, июнь 2019</p>
+                </div>
                 <p class="hot__content__info__title">Наблюдательный совет Банка ВТБ утвердил новую стратегию Группы до 2020 года</p>
                 <p class="hot__content__info__text">Дорожим клиентом, работаем в команде, отвечаем за результат, проявляем инициативу, совершенствуемся постоянно.</p>
                 <a href="#" class="hot__content__info__link">Читать дальше</a>
                 <div class="hot__content__info__social">
-                    <div>
+                    <a href="#">
                         <i class="ico ico__like"></i>
                         <span>5</span>
-                    </div>
-                    <div>
+                    </a>
+                    <a href="#">
                         <i class="ico ico__comment"></i>
                         <span>7</span>
-                    </div>
-                    <div>
+                    </a>
+                    <a href="#">
                         <i class="ico ico__watch"></i>
                         <span>37</span>
-                    </div>
+                    </a>
                 </div>
             </div>
         </div>
         <div class="hot__bar">
             <div class="hot__bar__wrap">
-                <p class="hot__bar__title">Рубрики</p>
+                <p class="hot__bar__title">Рубрики номера</p>
                 <nav class="hot__bar__nav">
                     <ul class="hot__bar__nav__rubric">
                         <li>
@@ -87,20 +281,38 @@
                         <li>
                             <a href="#">Культура</a>
                         </li>
+                        <li>
+                            <a href="#">Трансформация</a>
+                        </li>
+                        <li>
+                            <a href="#">Спорт</a>
+                        </li>
+                        <li>
+                            <a href="#">Культура</a>
+                        </li>
                     </ul>
                     <div class="hot__bar__nav__group">
-                        <a href="#">Все рубрики</a>
                         <a href="#">Содержание номера</a>
+                        <a href="#">Архив номеров</a>
                     </div>
                 </nav>
             </div>
-            <div class="hot__bar__wrap">
-                <p class="hot__bar__title">От первого лица</p>
-                <a href="#" class="hot__bar__user">
-                    <p>Приоритеты нашей стратегии</p>
-                    <div class="hot__bar__user__avatar" style="background: url('assets/img/photo/avatar_hot.jpg')"></div>
-                </a>
+        </div>
+    </div>
+    <div class="user">
+        <div class="user__info">
+            <div class="user__info__avatar">
+                <div class="user__info__avatar__pic" style="background: url('assets/img/photo/avatar_hot.jpg')"></div>
             </div>
+            <div class="user__info__status">
+                <span class="user__info__status__type">От первого лица </span>
+                <span class="user__info__status__name">Андрей Костин</span>
+                <span class="user__info__status__position">Президент - предсидатель правления</span>
+            </div>
+        </div>
+        <div class="user__news">
+            <a href="#" class="user__news__title">Наблюдательный совет Банка ВТБ утвердил новую стратегию Группы до 2020 года</a>
+            <p class="user__news__text">Как на основе новой технологии создается система для выдачи банковских гарантий?</p>
         </div>
     </div>
     <div class="articles">
@@ -110,18 +322,18 @@
             <a href="#" class="articles__card__title">Путь к клиенту</a>
             <p class="articles__card__text">В Банке ВТБ начался переход на новую систему организации работ – сервисную модель.</p>
             <div class="articles__card__social">
-                <div>
+                <a href="#">
                     <i class="ico ico__like"></i>
                     <span>5</span>
-                </div>
-                <div>
+                </a>
+                <a href="#">
                     <i class="ico ico__comment"></i>
                     <span>7</span>
-                </div>
-                <div>
+                </a>
+                <a href="#">
                     <i class="ico ico__watch"></i>
                     <span>37</span>
-                </div>
+                </a>
             </div>
         </div>
         <div class="articles__card">
@@ -130,18 +342,18 @@
             <a href="#" class="articles__card__title">Помогая бизнесу делом</a>
             <p class="articles__card__text">Запросы клиентов непрерывно растут, а банки стремятся им соответствовать.</p>
             <div class="articles__card__social">
-                <div>
+                <a href="#">
                     <i class="ico ico__like"></i>
                     <span>5</span>
-                </div>
-                <div>
+                </a>
+                <a href="#">
                     <i class="ico ico__comment"></i>
                     <span>7</span>
-                </div>
-                <div>
+                </a>
+                <a href="#">
                     <i class="ico ico__watch"></i>
                     <span>37</span>
-                </div>
+                </a>
             </div>
         </div>
         <div class="articles__card">
@@ -150,18 +362,18 @@
             <a href="#" class="articles__card__title">Значимый вклад: награждение лучших сотрудников группы ВТБ</a>
             <p class="articles__card__text">Церемония вручения «Отличник ВТБ» состоялась в башне «Федерация» в Москва Сити</p>
             <div class="articles__card__social">
-                <div>
+                <a href="#">
                     <i class="ico ico__like"></i>
                     <span>5</span>
-                </div>
-                <div>
+                </a>
+                <a href="#">
                     <i class="ico ico__comment"></i>
                     <span>7</span>
-                </div>
-                <div>
+                </a>
+                <a href="#">
                     <i class="ico ico__watch"></i>
                     <span>37</span>
-                </div>
+                </a>
             </div>
         </div>
     </div>
@@ -196,33 +408,6 @@
             <a href="#" class="preview__optional__link">
                 <img src="assets/img/photo/info_bg.jpg" align="photo">
             </a>
-        </div>
-    </div>
-    <div class="preview">
-        <div class="preview__content">
-            <div class="preview__content__bg" style="background: url('assets/img/photo/preview_bg.jpg')"></div>
-            <div class="preview__content__control">
-                <a href="#" class="preview__content__control__btn btn-prev"><i class="ico"></i></a>
-                <a href="#" class="preview__content__control__btn btn-next"><i class="ico"></i></a>
-            </div>
-            <div class="preview__content__info">
-                <p class="preview__content__info__type">Фотофакт</p>
-                <p class="preview__content__info__title">Годовое общее собрание акционеров ВТБ</p>
-                <div class="preview__content__info__social">
-                    <div>
-                        <i class="ico ico__like_w"></i>
-                        <span>5</span>
-                    </div>
-                    <div>
-                        <i class="ico ico__comment_w"></i>
-                        <span>7</span>
-                    </div>
-                    <div>
-                        <i class="ico ico__watch_w"></i>
-                        <span>37</span>
-                    </div>
-                </div>
-            </div>
         </div>
     </div>
     <div class="compilation">
@@ -340,6 +525,101 @@
             <a href="#" class="compilation__link">Все статьи </a>
         </div>
     </div>
+    <div class="event">
+        <div class="event__body">
+            <div class="event__body__head">
+                <p class="event__body__head__title">События и назначения</p>
+            </div>
+            <div class="event__body__control">
+                <a href="#" class="event__body__control__btn btn-prev"><i class="ico"></i></a>
+                <a href="#" class="event__body__control__btn btn-next"><i class="ico"></i></a>
+            </div>
+            <div class="event__body__wrap">
+                <div class="event__body__wrap__card">
+                    <div class="event__body__wrap__card__bg" style="background: url('assets/img/photo/event_bg_1.jpg')"></div>
+                    <a href="#" class="event__body__wrap__card__title">1 июля стартовала программа стажировок ВТБ Юниор</a>
+                </div>
+                <div class="event__body__wrap__card">
+                    <div class="event__body__wrap__card__bg" style="background: url('assets/img/photo/event_bg_2.jpg')"></div>
+                    <a href="#" class="event__body__wrap__card__title">Олег Барков назначен новым генеральным директором ВТБ Недвижимость</a>
+                </div>
+                <div class="event__body__wrap__card">
+                    <div class="event__body__wrap__card__bg" style="background: url('assets/img/photo/event_bg_3.jpg')"></div>
+                    <a href="#" class="event__body__wrap__card__title">ВТБ техэкспо : члены правления банка оценили внутренние технологические разработки</a>
+                </div>
+                <div class="event__body__wrap__card">
+                    <div class="event__body__wrap__card__bg" style="background: url('assets/img/photo/event_bg_4.jpg')"></div>
+                    <a href="#" class="event__body__wrap__card__title">Ольга Мамедова назначена руководителем департамента по работе с обращениями клиентов</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="choice">
+        <div class="choice__select">
+            <a href="#" class="choice__select__btn btn-prev"><i class="ico"></i></a>
+            <div class="choice__select__wrap">
+                <div class="choice__select__wrap__card">
+                    <div class="choice__select__wrap__card__img">
+                        <a href="#">
+                            <img align="picture" src="assets/img/photo/choice_card.jpg">
+                        </a>
+                    </div>
+                    <div class="choice__select__wrap__card__info">
+                        <p class="choice__select__wrap__card__info__text">
+                            <span class="choice__select__wrap__card__info__text__number">№27</span>
+                            <span class="choice__select__wrap__card__info__text__year">Июнь 2019</span>
+                        </p>
+                        <a href="#" class="choice__select__wrap__card__info__link">Все предыдущие выпуски</a>
+                    </div>
+                </div>
+                <div class="choice__select__wrap__card">
+                    <div class="choice__select__wrap__card__img">
+                        <a href="#">
+                            <img align="picture" src="assets/img/photo/choice_card.jpg">
+                        </a>
+                    </div>
+                    <div class="choice__select__wrap__card__info">
+                        <p class="choice__select__wrap__card__info__text">
+                            <span class="choice__select__wrap__card__info__text__number">№27</span>
+                            <span class="choice__select__wrap__card__info__text__year">Июнь 2019</span>
+                        </p>
+                        <a href="#" class="choice__select__wrap__card__info__link">Все предыдущие выпуски</a>
+                    </div>
+                </div>
+            </div>
+            <a href="#" class="choice__select__btn btn-next"><i class="ico"></i></a>
+        </div>
+        <div class="choice__banner">
+            <a href="#" class="choice__banner__item" style="background: url('assets/img/photo/banner_bg.jpg')"></a>
+        </div>
+    </div>
+    <div class="preview">
+        <div class="preview__content">
+            <div class="preview__content__bg" style="background: url('assets/img/photo/preview_bg.jpg')"></div>
+            <div class="preview__content__control">
+                <a href="#" class="preview__content__control__btn btn-prev"><i class="ico"></i></a>
+                <a href="#" class="preview__content__control__btn btn-next"><i class="ico"></i></a>
+            </div>
+            <div class="preview__content__info">
+                <p class="preview__content__info__type">Фотофакт</p>
+                <p class="preview__content__info__title">Годовое общее собрание акционеров ВТБ</p>
+                <div class="preview__content__info__social">
+                    <div>
+                        <i class="ico ico__like_w"></i>
+                        <span>5</span>
+                    </div>
+                    <div>
+                        <i class="ico ico__comment_w"></i>
+                        <span>7</span>
+                    </div>
+                    <div>
+                        <i class="ico ico__watch_w"></i>
+                        <span>37</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
     <div class="compilation">
         <div class="compilation__content">
             <div class="compilation__content__card">
@@ -437,74 +717,6 @@
             <a href="#" class="compilation__link">Все статьи </a>
         </div>
     </div>
-    <div class="event">
-        <div class="event__body">
-            <div class="event__body__head">
-                <p class="event__body__head__title">События и назначения</p>
-            </div>
-            <div class="event__body__control">
-                <a href="#" class="event__body__control__btn btn-prev"><i class="ico"></i></a>
-                <a href="#" class="event__body__control__btn btn-next"><i class="ico"></i></a>
-            </div>
-            <div class="event__body__wrap">
-                <div class="event__body__wrap__card">
-                    <div class="event__body__wrap__card__bg" style="background: url('assets/img/photo/event_bg_1.jpg')"></div>
-                    <a href="#" class="event__body__wrap__card__title">1 июля стартовала программа стажировок ВТБ Юниор</a>
-                </div>
-                <div class="event__body__wrap__card">
-                    <div class="event__body__wrap__card__bg" style="background: url('assets/img/photo/event_bg_2.jpg')"></div>
-                    <a href="#" class="event__body__wrap__card__title">Олег Барков назначен новым генеральным директором ВТБ Недвижимость</a>
-                </div>
-                <div class="event__body__wrap__card">
-                    <div class="event__body__wrap__card__bg" style="background: url('assets/img/photo/event_bg_3.jpg')"></div>
-                    <a href="#" class="event__body__wrap__card__title">ВТБ техэкспо : члены правления банка оценили внутренние технологические разработки</a>
-                </div>
-                <div class="event__body__wrap__card">
-                    <div class="event__body__wrap__card__bg" style="background: url('assets/img/photo/event_bg_4.jpg')"></div>
-                    <a href="#" class="event__body__wrap__card__title">Ольга Мамедова назначена руководителем департамента по работе с обращениями клиентов</a>
-                </div>
-            </div>
-        </div>
-    </div>
-    <div class="choice">
-        <div class="choice__select">
-            <a href="#" class="choice__select__btn btn-prev"><i class="ico"></i></a>
-            <div class="choice__select__wrap">
-                <div class="choice__select__wrap__card">
-                    <div class="choice__select__wrap__card__img">
-                        <a href="#">
-                            <img align="picture" src="assets/img/photo/choice_card.jpg">
-                        </a>
-                    </div>
-                    <div class="choice__select__wrap__card__info">
-                        <p class="choice__select__wrap__card__info__text">
-                            <span class="choice__select__wrap__card__info__text__number">№27</span>
-                            <span class="choice__select__wrap__card__info__text__year">Июнь 2019</span>
-                        </p>
-                        <a href="#" class="choice__select__wrap__card__info__link">Все предыдущие выпуски</a>
-                    </div>
-                </div>
-                <div class="choice__select__wrap__card">
-                    <div class="choice__select__wrap__card__img">
-                        <a href="#">
-                            <img align="picture" src="assets/img/photo/choice_card.jpg">
-                        </a>
-                    </div>
-                    <div class="choice__select__wrap__card__info">
-                        <p class="choice__select__wrap__card__info__text">
-                            <span class="choice__select__wrap__card__info__text__number">№27</span>
-                            <span class="choice__select__wrap__card__info__text__year">Июнь 2019</span>
-                        </p>
-                        <a href="#" class="choice__select__wrap__card__info__link">Все предыдущие выпуски</a>
-                    </div>
-                </div>
-            </div>
-            <a href="#" class="choice__select__btn btn-next"><i class="ico"></i></a>
-        </div>
-        <div class="choice__banner">
-            <div class="choice__banner__item" style="background: url('assets/img/photo/banner_bg.jpg')"></div>
-        </div>
-    </div>
 </main>
 <footer>
     <div class="footer">
@@ -574,5 +786,6 @@
         </div>
     </div>
 </footer>
+<script src="assets/js/script.js"></script>
 </body>
 </html>
