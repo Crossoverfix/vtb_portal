@@ -19,6 +19,8 @@ header{
     flex-wrap: nowrap;
     align-items: flex-start;
     justify-content: flex-start;
+    position: relative;
+    z-index: 100;
     &__logo{
       a{
         display: inline-block;
@@ -31,6 +33,8 @@ header{
       }
     }
     &__name{
+      display: block;
+      text-decoration: none;
       &__title{
         margin-top: 0;
         margin-bottom: 5px;

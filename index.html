@@ -20,10 +20,10 @@
                         <img src="assets/img/ico/logo_vtb.png" alt="logo">
                     </a>
                 </div>
-                <div class="header__wrap__name">
+                <a href="#" class="header__wrap__name">
                     <p class="header__wrap__name__title">Энергия команды</p>
                     <p class="header__wrap__name__sub-title">Онлайн-журнал</p>
-                </div>
+                </a>
                 <div class="header__wrap__date">
                     <a href="#" class="header__wrap__date__link" data-js-drop="redaction">
                         <p class="header__wrap__date__number">№27</p>
@@ -260,7 +260,10 @@
         </div>
         <div class="hot__bar">
             <div class="hot__bar__wrap">
-                <p class="hot__bar__title">Рубрики номера</p>
+                <div class="hot__bar__head">
+                    <p class="hot__bar__title">Рубрики номера</p>
+                    <a href="#" class="hot__bar__collapse"></a>
+                </div>
                 <nav class="hot__bar__nav">
                     <ul class="hot__bar__nav__rubric">
                         <li>
@@ -301,11 +304,11 @@
     </div>
     <div class="user">
         <div class="user__info">
-            <div class="user__info__avatar">
+            <a href="#" class="user__info__avatar">
                 <div class="user__info__avatar__pic" style="background: url('assets/img/photo/avatar_hot.jpg')"></div>
-            </div>
+            </a>
             <div class="user__info__status">
-                <span class="user__info__status__type">От первого лица </span>
+                <a href="#" class="user__info__status__type">От первого лица </a>
                 <span class="user__info__status__name">Андрей Костин</span>
                 <span class="user__info__status__position">Президент - предсидатель правления</span>
             </div>
@@ -379,26 +382,72 @@
     </div>
     <div class="preview">
         <div class="preview__content">
-            <div class="preview__content__bg" style="background: url('assets/img/photo/preview_bg.jpg')"></div>
             <div class="preview__content__control">
-                <a href="#" class="preview__content__control__btn btn-prev"><i class="ico"></i></a>
-                <a href="#" class="preview__content__control__btn btn-next"><i class="ico"></i></a>
+                <a href="#" class="preview__content__control__btn btn-prev" data-js-preview="prev"><i class="ico"></i></a>
+                <a href="#" class="preview__content__control__btn btn-next" data-js-preview="next"><i class="ico"></i></a>
             </div>
-            <div class="preview__content__info">
-                <p class="preview__content__info__type">Фотофакт</p>
-                <p class="preview__content__info__title">Годовое общее собрание акционеров ВТБ</p>
-                <div class="preview__content__info__social">
-                    <div>
-                        <i class="ico ico__like_w"></i>
-                        <span>5</span>
+            <div class="preview__content__wrap">
+                <div class="preview__content__item">
+                    <div class="preview__content__bg" style="background: url('assets/img/photo/preview_bg.jpg')"></div>
+                    <div class="preview__content__info">
+                        <p class="preview__content__info__type">Фотофакт</p>
+                        <p class="preview__content__info__title">Годовое общее собрание акционеров ВТБ</p>
+                        <div class="preview__content__info__social">
+                            <div>
+                                <i class="ico ico__like_w"></i>
+                                <span>5</span>
+                            </div>
+                            <div>
+                                <i class="ico ico__comment_w"></i>
+                                <span>7</span>
+                            </div>
+                            <div>
+                                <i class="ico ico__watch_w"></i>
+                                <span>37</span>
+                            </div>
+                        </div>
                     </div>
-                    <div>
-                        <i class="ico ico__comment_w"></i>
-                        <span>7</span>
+                </div>
+                <div class="preview__content__item">
+                    <div class="preview__content__bg" style="background: url('assets/img/photo/articl_open_bg_1.jpg')"></div>
+                    <div class="preview__content__info">
+                        <p class="preview__content__info__type">Фотофакт 2</p>
+                        <p class="preview__content__info__title">Годовое общее собрание акционеров ВТБ</p>
+                        <div class="preview__content__info__social">
+                            <div>
+                                <i class="ico ico__like_w"></i>
+                                <span>5</span>
+                            </div>
+                            <div>
+                                <i class="ico ico__comment_w"></i>
+                                <span>7</span>
+                            </div>
+                            <div>
+                                <i class="ico ico__watch_w"></i>
+                                <span>37</span>
+                            </div>
+                        </div>
                     </div>
-                    <div>
-                        <i class="ico ico__watch_w"></i>
-                        <span>37</span>
+                </div>
+                <div class="preview__content__item">
+                    <div class="preview__content__bg" style="background: url('assets/img/photo/hot_bg.jpg')"></div>
+                    <div class="preview__content__info">
+                        <p class="preview__content__info__type">Фотофакт 3</p>
+                        <p class="preview__content__info__title">Годовое общее собрание акционеров ВТБ</p>
+                        <div class="preview__content__info__social">
+                            <div>
+                                <i class="ico ico__like_w"></i>
+                                <span>5</span>
+                            </div>
+                            <div>
+                                <i class="ico ico__comment_w"></i>
+                                <span>7</span>
+                            </div>
+                            <div>
+                                <i class="ico ico__watch_w"></i>
+                                <span>37</span>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -531,32 +580,48 @@
                 <p class="event__body__head__title">События и назначения</p>
             </div>
             <div class="event__body__control">
-                <a href="#" class="event__body__control__btn btn-prev"><i class="ico"></i></a>
-                <a href="#" class="event__body__control__btn btn-next"><i class="ico"></i></a>
+                <a href="#" class="event__body__control__btn btn-prev" data-js-event="prev"><i class="ico"></i></a>
+                <a href="#" class="event__body__control__btn btn-next" data-js-event="next"><i class="ico"></i></a>
             </div>
             <div class="event__body__wrap">
-                <div class="event__body__wrap__card">
+                <a href="#" class="event__body__wrap__card">
                     <div class="event__body__wrap__card__bg" style="background: url('assets/img/photo/event_bg_1.jpg')"></div>
-                    <a href="#" class="event__body__wrap__card__title">1 июля стартовала программа стажировок ВТБ Юниор</a>
-                </div>
-                <div class="event__body__wrap__card">
+                    <span class="event__body__wrap__card__title">1 июля стартовала программа стажировок ВТБ Юниор</span>
+                </a>
+                <a href="#" class="event__body__wrap__card">
                     <div class="event__body__wrap__card__bg" style="background: url('assets/img/photo/event_bg_2.jpg')"></div>
-                    <a href="#" class="event__body__wrap__card__title">Олег Барков назначен новым генеральным директором ВТБ Недвижимость</a>
-                </div>
-                <div class="event__body__wrap__card">
+                    <span class="event__body__wrap__card__title">Олег Барков назначен новым генеральным директором ВТБ Недвижимость</span>
+                </a>
+                <a href="#" class="event__body__wrap__card">
                     <div class="event__body__wrap__card__bg" style="background: url('assets/img/photo/event_bg_3.jpg')"></div>
-                    <a href="#" class="event__body__wrap__card__title">ВТБ техэкспо : члены правления банка оценили внутренние технологические разработки</a>
-                </div>
-                <div class="event__body__wrap__card">
+                    <span class="event__body__wrap__card__title">ВТБ техэкспо : члены правления банка оценили внутренние технологические разработки</span>
+                </a>
+                <a href="#" class="event__body__wrap__card">
                     <div class="event__body__wrap__card__bg" style="background: url('assets/img/photo/event_bg_4.jpg')"></div>
-                    <a href="#" class="event__body__wrap__card__title">Ольга Мамедова назначена руководителем департамента по работе с обращениями клиентов</a>
-                </div>
+                    <span class="event__body__wrap__card__title">Ольга Мамедова назначена руководителем департамента по работе с обращениями клиентов</span>
+                </a>
+                <a href="#" class="event__body__wrap__card">
+                    <div class="event__body__wrap__card__bg" style="background: url('assets/img/photo/event_bg_1.jpg')"></div>
+                    <span class="event__body__wrap__card__title">1 июля стартовала программа стажировок ВТБ Юниор</span>
+                </a>
+                <a href="#" class="event__body__wrap__card">
+                    <div class="event__body__wrap__card__bg" style="background: url('assets/img/photo/event_bg_2.jpg')"></div>
+                    <span class="event__body__wrap__card__title">Олег Барков назначен новым генеральным директором ВТБ Недвижимость</span>
+                </a>
+                <a href="#" class="event__body__wrap__card">
+                    <div class="event__body__wrap__card__bg" style="background: url('assets/img/photo/event_bg_3.jpg')"></div>
+                    <span class="event__body__wrap__card__title">ВТБ техэкспо : члены правления банка оценили внутренние технологические разработки</span>
+                </a>
+                <a href="#" class="event__body__wrap__card">
+                    <div class="event__body__wrap__card__bg" style="background: url('assets/img/photo/event_bg_4.jpg')"></div>
+                    <span class="event__body__wrap__card__title">Ольга Мамедова назначена руководителем департамента по работе с обращениями клиентов</span>
+                </a>
             </div>
         </div>
     </div>
     <div class="choice">
         <div class="choice__select">
-            <a href="#" class="choice__select__btn btn-prev"><i class="ico"></i></a>
+            <a href="#" class="choice__select__btn btn-prev" data-js-choice="prev"><i class="ico"></i></a>
             <div class="choice__select__wrap">
                 <div class="choice__select__wrap__card">
                     <div class="choice__select__wrap__card__img">
@@ -587,134 +652,10 @@
                     </div>
                 </div>
             </div>
-            <a href="#" class="choice__select__btn btn-next"><i class="ico"></i></a>
+            <a href="#" class="choice__select__btn btn-next" data-js-choice="next"><i class="ico"></i></a>
         </div>
         <div class="choice__banner">
             <a href="#" class="choice__banner__item" style="background: url('assets/img/photo/banner_bg.jpg')"></a>
-        </div>
-    </div>
-    <div class="preview">
-        <div class="preview__content">
-            <div class="preview__content__bg" style="background: url('assets/img/photo/preview_bg.jpg')"></div>
-            <div class="preview__content__control">
-                <a href="#" class="preview__content__control__btn btn-prev"><i class="ico"></i></a>
-                <a href="#" class="preview__content__control__btn btn-next"><i class="ico"></i></a>
-            </div>
-            <div class="preview__content__info">
-                <p class="preview__content__info__type">Фотофакт</p>
-                <p class="preview__content__info__title">Годовое общее собрание акционеров ВТБ</p>
-                <div class="preview__content__info__social">
-                    <div>
-                        <i class="ico ico__like_w"></i>
-                        <span>5</span>
-                    </div>
-                    <div>
-                        <i class="ico ico__comment_w"></i>
-                        <span>7</span>
-                    </div>
-                    <div>
-                        <i class="ico ico__watch_w"></i>
-                        <span>37</span>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-    <div class="compilation">
-        <div class="compilation__content">
-            <div class="compilation__content__card">
-                <a href="#" class="compilation__content__card__bg" style="background: url('assets/img/photo/compilation_bg_1.jpg')"></a>
-                <div class="compilation__content__card__info">
-                    <p class="compilation__content__card__info__type">Технологии</p>
-                    <a href="#" class="compilation__content__card__info__title">Гарантии на блокчейне</a>
-                    <p class="compilation__content__card__info__text">Как на основе новой технологии создается система для выдачи банковских гарантий?</p>
-                    <div class="compilation__content__card__info__social">
-                        <div>
-                            <i class="ico ico__like"></i>
-                            <span>5</span>
-                        </div>
-                        <div>
-                            <i class="ico ico__comment"></i>
-                            <span>7</span>
-                        </div>
-                        <div>
-                            <i class="ico ico__watch"></i>
-                            <span>37</span>
-                        </div>
-                    </div>
-                    <p class="compilation__content__card__info__date">Вчера</p>
-                </div>
-            </div>
-            <div class="compilation__content__card">
-                <a href="#" class="compilation__content__card__bg" style="background: url('assets/img/photo/compilation_bg_2.jpg')"></a>
-                <div class="compilation__content__card__info">
-                    <p class="compilation__content__card__info__type">Инвестиции</p>
-                    <a href="#" class="compilation__content__card__info__title">Начните зарабатывать уже сейчас</a>
-                    <p class="compilation__content__card__info__text">Индивидуальный инвестиционный счет позволяет получать до 52 000 рублей в год</p>
-                    <div class="compilation__content__card__info__social">
-                        <div>
-                            <i class="ico ico__like"></i>
-                            <span>5</span>
-                        </div>
-                        <div>
-                            <i class="ico ico__comment"></i>
-                            <span>7</span>
-                        </div>
-                        <div>
-                            <i class="ico ico__watch"></i>
-                            <span>37</span>
-                        </div>
-                    </div>
-                    <p class="compilation__content__card__info__date">7 дней назад</p>
-                </div>
-            </div>
-            <div class="compilation__content__card">
-                <a href="#" class="compilation__content__card__bg" style="background: url('assets/img/photo/compilation_bg_3.jpg')"></a>
-                <div class="compilation__content__card__info">
-                    <p class="compilation__content__card__info__type">Трансформация</p>
-                    <a href="#" class="compilation__content__card__info__title">Бережливый квест</a>
-                    <p class="compilation__content__card__info__text">Елена Туманова рассказала о японской системе отказа от всего лишнего в бизнес процессах</p>
-                    <div class="compilation__content__card__info__social">
-                        <div>
-                            <i class="ico ico__like"></i>
-                            <span>5</span>
-                        </div>
-                        <div>
-                            <i class="ico ico__comment"></i>
-                            <span>7</span>
-                        </div>
-                        <div>
-                            <i class="ico ico__watch"></i>
-                            <span>37</span>
-                        </div>
-                    </div>
-                    <p class="compilation__content__card__info__date">2 дня назад</p>
-                </div>
-            </div>
-            <div class="compilation__content__card">
-                <a href="#" class="compilation__content__card__bg" style="background: url('assets/img/photo/compilation_bg_4.jpg')"></a>
-                <div class="compilation__content__card__info">
-                    <p class="compilation__content__card__info__type">Инфографика</p>
-                    <a href="#" class="compilation__content__card__info__title">5 приоритетов развития</a>
-                    <p class="compilation__content__card__info__text">Цифровизация бизнеса, скорость реакции на изменения рынка, построение технологической платформы</p>
-                    <div class="compilation__content__card__info__social">
-                        <div>
-                            <i class="ico ico__like"></i>
-                            <span>5</span>
-                        </div>
-                        <div>
-                            <i class="ico ico__comment"></i>
-                            <span>7</span>
-                        </div>
-                        <div>
-                            <i class="ico ico__watch"></i>
-                            <span>37</span>
-                        </div>
-                    </div>
-                    <p class="compilation__content__card__info__date">3 дня назад</p>
-                </div>
-            </div>
-            <a href="#" class="compilation__link">Все статьи </a>
         </div>
     </div>
 </main>

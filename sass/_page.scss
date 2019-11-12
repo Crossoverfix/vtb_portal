@@ -62,10 +62,8 @@
     flex-direction: row;
     align-items: stretch;
     justify-content: flex-end;
-    background-color: #e6eefb;
     width: 880px;
-    height: 495px;
-    background-color: gray;
+    height: 493px;
     position: relative;
     &__bg{
       position: absolute;
@@ -178,9 +176,37 @@
     &__wrap{
       position: relative;
     }
+    &__head{
+      margin-bottom: 20px;
+      width: 100%;
+      position: relative;
+      width: 100%;
+      display: flex;
+      flex-direction: row;
+      flex-wrap: nowrap;
+      align-items: center;
+      justify-content: space-between;
+    }
+    &__collapse{
+      display: none;
+      position: relative;
+      width: 30px;
+      height: 30px;
+      &:before{
+        content: "";
+        position: absolute;
+        left: 50%;
+        top: 50%;
+        transform: translate(-50%,-50%);
+        width: 11px;
+        height: 6px;
+        background: url("../assets/img/ico/ico_drop_down.svg")no-repeat center;
+        background-size: contain;
+      }
+    }
     &__title{
       margin-top: 0;
-      margin-bottom: 20px;
+      margin-bottom: 0;
       @include def_font(18px,400);
       color: $c-blue-3;
     }
@@ -244,16 +270,24 @@
     align-items: center;
     justify-content: space-between;
     &__avatar{
+      display: block;
+      text-decoration: none;
       position: relative;
       width: 124px;
       height: 124px;
       flex-shrink: 0;
       flex-grow: 0;
       margin-right: 40px;
+      &:hover{
+        .user__info__avatar__pic{
+          border: 1px solid #00AAFF;;
+        }
+      }
       &__pic{
         width: 100%;
         height: 100%;
         border-radius: 50%;
+        border: 1px solid white;
         overflow: hidden;
         background-color: gray;
         background-repeat: no-repeat!important;
@@ -270,10 +304,14 @@
       justify-content: flex-start;
       &__type{
         display: inline-block;
+        text-decoration: none;
         margin-top: 0;
         margin-bottom: 10px;
         @include def_font(14px,400);
         color: #00AAFF;
+        &:hover{
+          opacity: 0.8;
+        }
       }
       &__name{
         display: inline-block;
@@ -424,14 +462,30 @@
   border-bottom: 1px solid #e6e8f2;
   &__content{
     width: 100%;
-    background-color: #e6eefb;
     position: relative;
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    justify-content: flex-start;
-    flex-wrap: nowrap;
-    min-height: 350px;
+    min-height: 437px;
+    &__wrap{
+      position: relative;
+      width: 100%;
+      height: 100%;
+      overflow: hidden;
+      display: flex;
+      flex-direction: row;
+      flex-wrap: nowrap;
+      align-items: flex-start;
+      justify-content: flex-start;
+    }
+    &__item{
+      flex-grow: 0;
+      flex-shrink: 0;
+      width: 100%;
+      height: 100%;
+      display: flex;
+      flex-wrap: nowrap;
+      align-items: flex-end;
+      justify-content: flex-start;
+      position: relative;
+    }
     &__bg{
       position: absolute;
       left: 0;
@@ -443,15 +497,16 @@
       background-repeat: no-repeat!important;
     }
     &__control{
-      position: relative;
+      position: absolute;
+      z-index: 10;
+      top: 50%;
+      left: 0;
       width: 100%;
-      min-height: 1px;
-      padding-top: 42%;
-      flex-grow: 1;
+      height: 40px;
       &__btn{
         display: inline-block;
         position: absolute;
-        top: 50%;
+        top: 0;
         transform: translateY(-50%);
         border-radius: 50%;
         background-color: #ffffff;
@@ -460,9 +515,9 @@
         height: 40px;
         width: 40px;
         overflow: hidden;
-        padding: 12px;
+        padding: 11px;
         &:hover{
-          background-color: #009fdf;
+          background-color: #e6e6e6;
         }
         i{
           display: inline-block;
@@ -473,25 +528,15 @@
           &-prev{
             left: 20px;
             right: auto;
-            &:hover{
-              i{
-                background: url("../assets/img/ico/ico_prev_w.png");
-              }
-            }
             i{
-              background: url("../assets/img/ico/ico_prev.png");
+              background: url("../assets/img/ico/ico_prev.svg");
             }
           }
           &-next{
             left: auto;
             right: 20px;
-            &:hover{
-              i{
-                background: url("../assets/img/ico/ico_next_w.png");
-              }
-            }
             i{
-              background: url("../assets/img/ico/ico_next.png");
+              background: url("../assets/img/ico/ico_next.svg");
             }
           }
         }
@@ -504,6 +549,7 @@
       width: 100%;
       background-color: rgba(12,41,81,0.75);
       padding: 14px 22px;
+      z-index: 1;
       &__type{
         margin-top: 0;
         margin-bottom: 10px;
@@ -857,6 +903,14 @@
         margin: 0 15px;
         width: calc((100% - 120px) / 4);
         position: relative;
+        text-decoration: none;
+        z-index: 1;
+        transition: all linear 0.3s;
+        &:hover{
+          .event__body__wrap__card__title{
+            color: $c-blue-3;
+          }
+        }
         &__bg{
           width: 100%;
           min-height: 1px;
@@ -872,10 +926,6 @@
           @include def_font(14px,500);
           line-height: 14px;
           color: $c-blue;
-          text-decoration: none;
-          &:hover{
-            color: $c-blue-3;
-          }
         }
       }
     }
@@ -937,23 +987,24 @@
       overflow: hidden;
       white-space: nowrap;
       position: relative;
+      width: calc(100% - 30px);
+      margin: 0 15px;
       &__card{
-        width: calc(100% - 30px);
-        margin: 0 15px;
+        width: 100%;
+        margin: 0;
         display: inline-block;
         &__img{
           width: 100%;
           position: relative;
-          max-height: 220px;
-          background-color: #e6eefb;
-          overflow: hidden;
           margin-bottom: 20px;
           a{
             display: inline-block;
             width: 100%;
             height: 100%;
             position: relative;
+            border: 1px solid #00ACFF;
             img{
+              display: block;
               width: 100%;
             }
           }
