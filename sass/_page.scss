@@ -1081,6 +1081,57 @@
     width: 100%;
     margin-bottom: 30px;
   }
+  &__img{
+    position: relative;
+    display: block;
+    width: 100%;
+    min-height: 10px;
+    margin-bottom: 20px;
+    background-color: #e6eefb;
+    img{
+      display: block;
+      width: 100%;
+    }
+  }
+  &__info-head{
+    width: 100%;
+    display: block;
+    margin-bottom: 10px;
+    &__type{
+      display: inline-block;
+      font-family: 'VTB';
+      font-size: 18px;
+      font-weight: 400;
+      color: #00ACFF;
+      margin-right: 20px;
+    }
+    &__date{
+      display: inline-block;
+      font-family: 'VTB Cond';
+      font-size: 14px;
+      font-weight: 300;
+      color: #404040;
+    }
+  }
+  &__info-title{
+    display: inline-block;
+    text-decoration: none;
+    font-family: 'VTB';
+    font-size: 26px;
+    font-weight: 500;
+    color: #0a2973;
+    margin-top: 0;
+    margin-bottom: 15px;
+  }
+  &__text{
+    margin-top: 0;
+    margin-bottom: 10px;
+    font-family: 'VTB';
+    font-size: 14px;
+    font-weight: 300;
+    color: #404040;
+    width: 100%;
+  }
 }
 .article-open{
   position: relative;
