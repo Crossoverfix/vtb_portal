@@ -25,17 +25,17 @@
         content: "";
         position: absolute;
         top: 50%;
-        right: 9px;
+        right: 2px;
         transform: translate(-50%,-50%);
-        width: 4px;
-        height: 6px;
-        background: url("../assets/img/ico/breadcrumb.png")no-repeat center;
+        width: 10px;
+        height: 10px;
+        background: url("../assets/img/ico/arr_breadcrumb.svg")no-repeat center;
         background-size: contain;
       }
       a{
         display: inline-block;
         text-decoration: none;
-        @include def_font(12px,400);
+        @include def_font(13px,400);
         color: $c-blue-l;
         vertical-align: top;
         &:hover{
@@ -622,9 +622,11 @@
   flex-wrap: nowrap;
   align-items: stretch;
   justify-content: space-between;
+  margin-top: 30px;
   padding-top: 30px;
   padding-bottom: 30px;
   border-bottom: 1px solid #e6e8f2;
+  border-top: 1px solid #e6e8f2;
   position: relative;
   &__content{
     width: 100%;
@@ -1069,8 +1071,7 @@
 }
 .show-article{
   display: block;
-  padding-bottom: 30px;
-  border-bottom: 1px solid #e6e8f2;
+  //border-bottom: 1px solid #e6e8f2;
   position: relative;
   width: 100%;
   &__title{
@@ -1079,53 +1080,6 @@
     color: $c-text-d;
     width: 100%;
     margin-bottom: 30px;
-  }
-  &__img{
-    position: relative;
-    display: block;
-    width: 100%;
-    min-height: 10px;
-    margin-bottom: 20px;
-    background-color: #e6eefb;
-    img{
-      display: block;
-      width: 100%;
-    }
-  }
-  &__info-head{
-    width: 100%;
-    display: block;
-    margin-bottom: 10px;
-    span{
-      display: inline-block;
-    }
-    &__type{
-      @include def_font(18px,400);
-      color: $c-blue-3;
-      margin-right: 20px;
-    }
-    &__date{
-      @include def_font_cond(14px,300);
-      color: $c-text-d;
-    }
-  }
-  &__info-title{
-    display: inline-block;
-    text-decoration: none;
-    @include def_font(26px,500);
-    color: $c-blue;
-    margin-top: 0;
-    margin-bottom: 15px;
-    &:hover{
-      color: $c-blue-3;
-    }
-  }
-  &__text{
-    margin-top: 0;
-    margin-bottom: 10px;
-    @include def_font(14px,300);
-    color: $c-text-d;
-    width: 100%;
   }
 }
 .article-open{
@@ -1685,6 +1639,108 @@
           @include def_font(14px,300);
           color: $c-blue-l;
         }
+      }
+    }
+  }
+}
+.side-bar{
+  width: 100%;
+  position: relative;
+  background-color: #E6EEFB;
+  padding: 25px;
+  &.show{
+    .side-bar__collapse{
+      i{
+        transform: rotate(180deg);
+      }
+    }
+  }
+  &__head{
+    margin-bottom: 20px;
+    width: 100%;
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    align-items: center;
+    justify-content: space-between;
+  }
+  &__collapse{
+    display: none;
+    width: 25px;
+    height: 25px;
+    position: relative;
+    padding: 8px 6px;
+    i{
+      width: 100%;
+      height: 100%;
+      display: block;
+      background: url("../assets/img/ico/ico_drop_down.svg")no-repeat center;
+      background-size: contain;
+    }
+  }
+  &__title{
+    margin-top: 0;
+    margin-bottom: 0;
+    @include def_font(18px,400);
+    color: #00ACFF;
+    width: 100%;
+  }
+  &__list{
+    list-style-type: none;
+    margin: 0 0 10px 0;
+    padding: 0;
+    position: relative;
+    width: 100%;
+    li{
+      width: 100%;
+      margin-bottom: 10px;
+      a{
+        text-decoration: none;
+        display: inline-block;
+        position: relative;
+        @include def_font(18px,300);
+        color: #0A2973;
+        line-height: 15px;
+        word-break: break-all;
+        &:hover{
+          color: #00ACFF;
+        }
+        &.m-new{
+          padding-right: 45px;
+          &:before{
+            content: "";
+            position: absolute;
+            display: block;
+            right: 0;
+            top: 1px;
+            width: 30px;
+            height: 15px;
+            background: url("../assets/img/ico/new.svg")no-repeat center;
+            background-size: contain;
+          }
+        }
+        &.active{
+          font-weight: 500;
+        }
+      }
+    }
+  }
+  &__group{
+    display: flex;
+    width: 100%;
+    position: relative;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    a{
+      display: inline-block;
+      margin-bottom: 10px;
+      text-decoration: none;
+      @include def_font(12px,400);
+      color: #00ACFF;
+      &:hover{
+        opacity: 0.6;
       }
     }
   }

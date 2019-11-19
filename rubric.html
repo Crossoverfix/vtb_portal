@@ -8,6 +8,7 @@
     <meta name="format-detection" content="telephone=no">
     <title>VTB Rubric</title>
     <link href="sass/style.css" rel="stylesheet">
+    <script src="assets/js/jquery-3.4.1.js"></script>
 </head>
 <body>
 <header>
@@ -19,13 +20,203 @@
                         <img src="assets/img/ico/logo_vtb.png" alt="logo">
                     </a>
                 </div>
-                <div class="header__wrap__name">
+                <a href="#" class="header__wrap__name">
                     <p class="header__wrap__name__title">Энергия команды</p>
                     <p class="header__wrap__name__sub-title">Онлайн-журнал</p>
-                </div>
+                </a>
                 <div class="header__wrap__date">
-                    <p class="header__wrap__date__number">№27</p>
-                    <p class="header__wrap__date__year">Июнь 2019</p>
+                    <a href="#" class="header__wrap__date__link" data-js-drop="redaction">
+                        <p class="header__wrap__date__number">№27</p>
+                        <p class="header__wrap__date__year">Июнь 2019</p>
+                    </a>
+                    <div class="header__wrap__date__drop">
+                        <ul class="header__wrap__date__drop__year">
+                            <li>
+                                <a href="#" data-js-drop-select="2019">2019</a>
+                            </li>
+                            <li>
+                                <a href="#" data-js-drop-select="2018">2018</a>
+                            </li>
+                            <li>
+                                <a href="#" data-js-drop-select="2017">2017</a>
+                            </li>
+                            <li>
+                                <a href="#" data-js-drop-select="2016">2016</a>
+                            </li>
+                        </ul>
+                        <div class="header__wrap__date__drop__second">
+                            <ul  class="header__wrap__date__drop__redaction" data-js-drop-selected="2019">
+                                <li>
+                                    <a href="#">
+                                        <span class="header__wrap__date__drop__redaction__month">Окт.</span>
+                                        <span class="header__wrap__date__drop__redaction__number">№27</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <span class="header__wrap__date__drop__redaction__month">Сент.</span>
+                                        <span class="header__wrap__date__drop__redaction__number">№26</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <span class="header__wrap__date__drop__redaction__month">Авг.</span>
+                                        <span class="header__wrap__date__drop__redaction__number">№25</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <span class="header__wrap__date__drop__redaction__month">Июль</span>
+                                        <span class="header__wrap__date__drop__redaction__number">№24</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <span class="header__wrap__date__drop__redaction__month">Июнь</span>
+                                        <span class="header__wrap__date__drop__redaction__number">№23</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <span class="header__wrap__date__drop__redaction__month">Май.</span>
+                                        <span class="header__wrap__date__drop__redaction__number">№22</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <span class="header__wrap__date__drop__redaction__month">Апр.</span>
+                                        <span class="header__wrap__date__drop__redaction__number">№21</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <span class="header__wrap__date__drop__redaction__month">Март.</span>
+                                        <span class="header__wrap__date__drop__redaction__number">№20</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <span class="header__wrap__date__drop__redaction__month">Фев.</span>
+                                        <span class="header__wrap__date__drop__redaction__number">№19</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <span class="header__wrap__date__drop__redaction__month">Янв.</span>
+                                        <span class="header__wrap__date__drop__redaction__number">№18</span>
+                                    </a>
+                                </li>
+                            </ul>
+                            <ul  class="header__wrap__date__drop__redaction" data-js-drop-selected="2018">
+                                <li>
+                                    <a href="#">
+                                        <span class="header__wrap__date__drop__redaction__month">Окт.</span>
+                                        <span class="header__wrap__date__drop__redaction__number">№17</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <span class="header__wrap__date__drop__redaction__month">Сент.</span>
+                                        <span class="header__wrap__date__drop__redaction__number">№16</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <span class="header__wrap__date__drop__redaction__month">Авг.</span>
+                                        <span class="header__wrap__date__drop__redaction__number">№15</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <span class="header__wrap__date__drop__redaction__month">Июль</span>
+                                        <span class="header__wrap__date__drop__redaction__number">№14</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <span class="header__wrap__date__drop__redaction__month">Июнь</span>
+                                        <span class="header__wrap__date__drop__redaction__number">№13</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <span class="header__wrap__date__drop__redaction__month">Май.</span>
+                                        <span class="header__wrap__date__drop__redaction__number">№12</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <span class="header__wrap__date__drop__redaction__month">Апр.</span>
+                                        <span class="header__wrap__date__drop__redaction__number">№11</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <span class="header__wrap__date__drop__redaction__month">Март.</span>
+                                        <span class="header__wrap__date__drop__redaction__number">№10</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <span class="header__wrap__date__drop__redaction__month">Фев.</span>
+                                        <span class="header__wrap__date__drop__redaction__number">№9</span>
+                                    </a>
+                                </li>
+                            </ul>
+                            <ul  class="header__wrap__date__drop__redaction" data-js-drop-selected="2017">
+                                <li>
+                                    <a href="#">
+                                        <span class="header__wrap__date__drop__redaction__month">Окт.</span>
+                                        <span class="header__wrap__date__drop__redaction__number">№27</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <span class="header__wrap__date__drop__redaction__month">Сент.</span>
+                                        <span class="header__wrap__date__drop__redaction__number">№26</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <span class="header__wrap__date__drop__redaction__month">Апр.</span>
+                                        <span class="header__wrap__date__drop__redaction__number">№21</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <span class="header__wrap__date__drop__redaction__month">Март.</span>
+                                        <span class="header__wrap__date__drop__redaction__number">№20</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <span class="header__wrap__date__drop__redaction__month">Фев.</span>
+                                        <span class="header__wrap__date__drop__redaction__number">№19</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <span class="header__wrap__date__drop__redaction__month">Янв.</span>
+                                        <span class="header__wrap__date__drop__redaction__number">№18</span>
+                                    </a>
+                                </li>
+                            </ul>
+                            <ul  class="header__wrap__date__drop__redaction" data-js-drop-selected="2016">
+                                <li>
+                                    <a href="#">
+                                        <span class="header__wrap__date__drop__redaction__month">Май.</span>
+                                        <span class="header__wrap__date__drop__redaction__number">№22</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <span class="header__wrap__date__drop__redaction__month">Апр.</span>
+                                        <span class="header__wrap__date__drop__redaction__number">№21</span>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
                 </div>
             </div>
             <form class="container-small header-search">
@@ -36,81 +227,49 @@
                     </label>
                 </div>
             </form>
-            <input type="checkbox" id="collapse-menu">
-            <label for="collapse-menu" class="header-nav__btn"><i class="ico"></i></label>
-            <div class="container-small header-nav">
-                <nav class="header-nav__wrap">
-                    <p class="header-nav__title">Рубрики</p>
-                    <ul class="header-nav__list">
-                        <li>
-                            <a href="#" class="active">Команда</a>
-                        </li>
-                        <li>
-                            <a href="#">Карьера</a>
-                        </li>
-                        <li>
-                            <a href="#">Интервью</a>
-                        </li>
-                        <li>
-                            <a href="#">Трансформация</a>
-                        </li>
-                        <li>
-                            <a href="#">Спорт</a>
-                        </li>
-                        <li>
-                            <a href="#">Награды</a>
-                        </li>
-                        <li>
-                            <a href="#">События</a>
-                        </li>
-                        <li>
-                            <a href="#">Назначения</a>
-                        </li>
-                        <li>
-                            <a href="#">Инфографика</a>
-                        </li>
-                        <li>
-                            <a href="#">Фотофакт</a>
-                        </li>
-                        <li>
-                            <a href="#">Клуб привилегий</a>
-                        </li>
-                        <li>
-                            <a href="#">От первого лица</a>
-                        </li>
-                        <li>
-                            <a href="#">Тема номера</a>
-                        </li>
-                    </ul>
-                    <a class="header-nav__link" href="#">Содержание номера</a>
-                </nav>
-            </div>
         </div>
     </div>
 </header>
 <main class="container-fluid">
+    <div class="breadcrumb">
+        <ul>
+            <li>
+                <a href="#">Главная</a>
+            </li>
+            <li>
+                <a href="#">Команда</a>
+            </li>
+        </ul>
+    </div>
+    <div class="show-article">
+        <h2 class="show-article__title">Команда</h2>
+    </div>
    <div class="container">
-       <div class="breadcrumb">
-           <ul>
-               <li>
-                   <a href="#">Главная</a>
-               </li>
-               <li>
-                   <a href="#">Команда</a>
-               </li>
-           </ul>
-       </div>
-       <div class="show-article">
-           <h2 class="show-article__title">Команда</h2>
-           <div class="show-article__img">
-               <img align="img" src="assets/img/photo/show_article_bg.jpg">
+       <div class="hot__content">
+           <div class="hot__content__bg" style="background: url('assets/img/photo/hot_bg.jpg')"></div>
+           <div class="hot__content__info">
+               <div class="hot__content__info__head">
+                   <a href="#" class="hot__content__info__type">Тема номера</a>
+                   <p class="hot__content__info__date">№27, июнь 2019</p>
+               </div>
+               <p class="hot__content__info__title">Наблюдательный совет Банка ВТБ утвердил новую стратегию Группы до 2020 года</p>
+               <p class="hot__content__info__text">Дорожим клиентом, работаем в команде, отвечаем за результат, проявляем инициативу, совершенствуемся постоянно.</p>
+               <a href="#" class="hot__content__info__link">Читать дальше</a>
+               <div class="hot__content__info__social">
+                   <a href="#">
+                       <i class="ico ico__like"></i>
+                       <span>5</span>
+                   </a>
+                   <a href="#">
+                       <i class="ico ico__comment"></i>
+                       <span>7</span>
+                   </a>
+                   <a href="#">
+                       <i class="ico ico__watch"></i>
+                       <span>37</span>
+                   </a>
+               </div>
            </div>
-           <p class="show-article__info-head">
-               <span class="show-article__info-head__type">Команда</span>
-               <span class="show-article__info-head__date">№3, июнь 2018</span>
-           </p>
-           <a href="#" class="show-article__info-title">Значимый вклад</a>
-           <p class="show-article__text">28 мая в Москве прошло награждение лучших сотрудников Банка ВТБ по итогам 2018 года. Золотые нагрудные знаки получили 60 сотрудников, внесших наиболее значимый вклад в развитие бизнеса Банка ВТБ в 2018 году.</p>
        </div>
        <div class="compilation">
            <div class="compilation__content">
@@ -123,6 +282,20 @@
                        </p>
                        <a href="#" class="compilation__content__card__info__title">Команда Банка ВТБ стала призером Спартакиады Банка России</a>
                        <p class="compilation__content__card__info__text">Команда завоевала бронзовый приз среди 12 организаций финансового сектора</p>
+                       <div class="compilation__content__card__info__social">
+                           <div>
+                               <i class="ico ico__like"></i>
+                               <span>5</span>
+                           </div>
+                           <div>
+                               <i class="ico ico__comment"></i>
+                               <span>7</span>
+                           </div>
+                           <div>
+                               <i class="ico ico__watch"></i>
+                               <span>37</span>
+                           </div>
+                       </div>
                    </div>
                </div>
                <div class="compilation__content__card">
@@ -134,6 +307,20 @@
                        </p>
                        <a href="#" class="compilation__content__card__info__title">Один день из жизни объединенной региональной сети</a>
                        <p class="compilation__content__card__info__text">Репортер ЭК провел один день в офисе банка ВТБ, чтобы увидеть работу региональной сети.</p>
+                       <div class="compilation__content__card__info__social">
+                           <div>
+                               <i class="ico ico__like"></i>
+                               <span>5</span>
+                           </div>
+                           <div>
+                               <i class="ico ico__comment"></i>
+                               <span>7</span>
+                           </div>
+                           <div>
+                               <i class="ico ico__watch"></i>
+                               <span>37</span>
+                           </div>
+                       </div>
                    </div>
                </div>
                <div class="compilation__content__card">
@@ -145,6 +332,20 @@
                        </p>
                        <a href="#" class="compilation__content__card__info__title">Работа в ВТБ. Уверен в каждом шаге</a>
                        <p class="compilation__content__card__info__text">В конце 2018 года разработали и обновили визуальную концепцию бренда работодателя</p>
+                       <div class="compilation__content__card__info__social">
+                           <div>
+                               <i class="ico ico__like"></i>
+                               <span>5</span>
+                           </div>
+                           <div>
+                               <i class="ico ico__comment"></i>
+                               <span>7</span>
+                           </div>
+                           <div>
+                               <i class="ico ico__watch"></i>
+                               <span>37</span>
+                           </div>
+                       </div>
                    </div>
                </div>
                <div class="compilation__content__card">
@@ -156,12 +357,58 @@
                        </p>
                        <a href="#" class="compilation__content__card__info__title">Бренд работодателя. Новый карьерный сайт</a>
                        <p class="compilation__content__card__info__text">Большинству кандидатов при поиске работы нужна уверенность в работодателе</p>
+                       <div class="compilation__content__card__info__social">
+                           <div>
+                               <i class="ico ico__like"></i>
+                               <span>5</span>
+                           </div>
+                           <div>
+                               <i class="ico ico__comment"></i>
+                               <span>7</span>
+                           </div>
+                           <div>
+                               <i class="ico ico__watch"></i>
+                               <span>37</span>
+                           </div>
+                       </div>
                    </div>
                </div>
                <a href="#" class="compilation__btn">Больше статей</a>
            </div>
        </div>
    </div>
+    <div class="container-small">
+        <div class="side-bar">
+            <div class="side-bar__head">
+                <p class="side-bar__title">Рубрики</p>
+                <a href="#" class="side-bar__collapse" data-js-collapse="side-bar"><i></i></a>
+            </div>
+            <ul class="side-bar__list">
+                <li><a href="#">Команда</a></li>
+                <li><a href="#">Награды</a></li>
+                <li><a href="#" class="m-new">От первого лица</a></li>
+                <li><a href="#">События</a></li>
+                <li><a href="#">Назначения</a></li>
+                <li><a href="#" class="m-new">Инфографика</a></li>
+                <li><a href="#" class="m-new active">Тема номера</a></li>
+                <li><a href="#">Интервью</a></li>
+                <li><a href="#">Карьера</a></li>
+                <li><a href="#" class="m-new">Клиентоориентированность</a></li>
+                <li><a href="#">Ценности</a></li>
+                <li><a href="#">Продукт</a></li>
+                <li><a href="#">Трансформация</a></li>
+                <li><a href="#">Культура</a></li>
+                <li><a href="#">Книжная полка</a></li>
+                <li><a href="#">Спорт</a></li>
+                <li><a href="#" class="m-new">Фотофакт</a></li>
+                <li><a href="#">Клуб привилегий</a></li>
+            </ul>
+            <div class="side-bar__group">
+                <a href="#">Содержание номера</a>
+                <a href="#">Архив номеров</a>
+            </div>
+        </div>
+    </div>
 </main>
 <footer>
     <div class="footer">
@@ -231,5 +478,6 @@
         </div>
     </div>
 </footer>
+<script src="assets/js/script.js"></script>
 </body>
 </html>

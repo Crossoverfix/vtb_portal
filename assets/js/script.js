@@ -80,6 +80,12 @@ $(document).ready(function () {
         $('.hot__bar__nav').toggleClass('active');
         return false;
     })
+    var $collapseParrent = $('[data-js-collapse]');
+    $collapseParrent.on('click',function () {
+        let $parent = $(this).attr('data-js-collapse');
+        $(this).parents('.'+ $parent).toggleClass('show');
+        return false;
+    })
 
 
     $(document).keyup(function(e) {
