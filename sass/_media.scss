@@ -66,15 +66,15 @@
 }
 @media screen and (max-width: 991px){
   .container{
-    width: 740px;
-    max-width: 740px;
+    width: 580px;
+    max-width: 580px;
     &-fluid{
       width: 740px;
       max-width: 740px;
     }
     &-small{
-      width: 260px;
-      max-width: 260px;
+      width: 160px;
+      max-width: 160px;
     }
   }
   header{
@@ -105,12 +105,6 @@
   }
   .header-nav{
     right: -100%;
-  }
-  .header-search{
-    float: none;
-    left: 50%;
-    transform: translateX(-50%);
-    margin-top: 20px;
   }
   .hot{
     flex-wrap: wrap;
@@ -346,16 +340,19 @@
       margin-right: 20px;
     }
   }
+  .archive__card{
+    width: 100%;
+  }
 }
 @media screen and (max-width: 767px){
   header {
     padding-top: 96px;
     .container{
-      width: 500px;
-      max-width: 500px;
+      width: 470px;
+      max-width: 470px;
       &-fluid{
-        width: 700px;
-        max-width: 700px;
+        width: 640px;
+        max-width: 640px;
       }
       &-small{
         width: 160px;
@@ -363,10 +360,10 @@
       }
     }
   }
-  main{
+  main,footer{
     &.container-fluid{
-      width: 700px;
-      max-width: 700px;
+      width: 640px;
+      max-width: 640px;
     }
     .container{
       width: 100%;
@@ -374,6 +371,10 @@
       &-small{
         width: 100%;
         max-width: 100%;
+      }
+      &-fluid{
+        width: 640px;
+        max-width: 640px;
       }
     }
   }
@@ -461,7 +462,7 @@
   }
   .choice__select__wrap__card__img{
     margin-bottom: 10px;
-    max-height: 260px;
+    max-height: 380px;
   }
   .choice__banner{
     margin-left: 0;
@@ -476,8 +477,7 @@
     flex-wrap: wrap;
   }
   .footer__body__nav{
-    width: 100%;
-    margin-bottom: 10px;
+    display: none;
   }
   .footer__body__info{
     width: 100%;
@@ -535,10 +535,7 @@
     flex-direction: row-reverse;
   }
   .header-search{
-    transform: none;
-    left: 0;
     margin-top: 12px;
-    float: right;
   }
 }
 @media screen and (max-width: 574px){
@@ -546,7 +543,6 @@
     width: 280px;
     max-width: 280px;
   }
-
   .header__wrap{
     flex-wrap: wrap;
   }
@@ -795,5 +791,34 @@
   .breadcrumb{
     padding-top: 25px;
     padding-bottom: 10px;
+  }
+  .pages-head{
+    flex-wrap: wrap;
+  }
+  .pages-head__sort{
+    width: 100%;
+    justify-content: space-between;
+  }
+  .pages-head__sort__title{
+    flex-shrink: 1;
+    line-height: 18px;
+  }
+  .archive__card{
+    flex-wrap: wrap;
+  }
+  .archive__card__block{
+    width: 100%;
+    margin-bottom: 30px;
+  }
+  .archive__card__block__pic{
+    width: 140px;
+    margin-right: auto;
+    margin-left: auto;
+  }
+  .archive__card__info{
+    padding: 0;
+  }
+  .archive__card__info__head{
+    text-align: center;
   }
 }
