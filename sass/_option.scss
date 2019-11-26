@@ -1,0 +1,12 @@
+.mod-search{
+  &.container{
+    display: block;
+    margin: 0 auto;
+    padding-bottom: 40px;
+  }
+  &.compilation{
+    border: none;
+    padding-top: 0;
+    padding-bottom: 10px;
+  }
+}

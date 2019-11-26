@@ -8,6 +8,7 @@
     <meta name="format-detection" content="telephone=no">
     <title>VTB Article</title>
     <link href="sass/style.css" rel="stylesheet">
+    <script src="assets/js/jquery-3.4.1.js"></script>
 </head>
 <body>
 <header>
@@ -19,13 +20,203 @@
                         <img src="assets/img/ico/logo_vtb.png" alt="logo">
                     </a>
                 </div>
-                <div class="header__wrap__name">
+                <a href="#" class="header__wrap__name">
                     <p class="header__wrap__name__title">Энергия команды</p>
                     <p class="header__wrap__name__sub-title">Онлайн-журнал</p>
-                </div>
+                </a>
                 <div class="header__wrap__date">
-                    <p class="header__wrap__date__number">№27</p>
-                    <p class="header__wrap__date__year">Июнь 2019</p>
+                    <a href="#" class="header__wrap__date__link" data-js-drop="redaction">
+                        <p class="header__wrap__date__number">№27</p>
+                        <p class="header__wrap__date__year">Июнь 2019</p>
+                    </a>
+                    <div class="header__wrap__date__drop">
+                        <ul class="header__wrap__date__drop__year">
+                            <li>
+                                <a href="#" data-js-drop-select="2019">2019</a>
+                            </li>
+                            <li>
+                                <a href="#" data-js-drop-select="2018">2018</a>
+                            </li>
+                            <li>
+                                <a href="#" data-js-drop-select="2017">2017</a>
+                            </li>
+                            <li>
+                                <a href="#" data-js-drop-select="2016">2016</a>
+                            </li>
+                        </ul>
+                        <div class="header__wrap__date__drop__second">
+                            <ul  class="header__wrap__date__drop__redaction" data-js-drop-selected="2019">
+                                <li>
+                                    <a href="#">
+                                        <span class="header__wrap__date__drop__redaction__month">Окт.</span>
+                                        <span class="header__wrap__date__drop__redaction__number">№27</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <span class="header__wrap__date__drop__redaction__month">Сент.</span>
+                                        <span class="header__wrap__date__drop__redaction__number">№26</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <span class="header__wrap__date__drop__redaction__month">Авг.</span>
+                                        <span class="header__wrap__date__drop__redaction__number">№25</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <span class="header__wrap__date__drop__redaction__month">Июль</span>
+                                        <span class="header__wrap__date__drop__redaction__number">№24</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <span class="header__wrap__date__drop__redaction__month">Июнь</span>
+                                        <span class="header__wrap__date__drop__redaction__number">№23</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <span class="header__wrap__date__drop__redaction__month">Май.</span>
+                                        <span class="header__wrap__date__drop__redaction__number">№22</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <span class="header__wrap__date__drop__redaction__month">Апр.</span>
+                                        <span class="header__wrap__date__drop__redaction__number">№21</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <span class="header__wrap__date__drop__redaction__month">Март.</span>
+                                        <span class="header__wrap__date__drop__redaction__number">№20</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <span class="header__wrap__date__drop__redaction__month">Фев.</span>
+                                        <span class="header__wrap__date__drop__redaction__number">№19</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <span class="header__wrap__date__drop__redaction__month">Янв.</span>
+                                        <span class="header__wrap__date__drop__redaction__number">№18</span>
+                                    </a>
+                                </li>
+                            </ul>
+                            <ul  class="header__wrap__date__drop__redaction" data-js-drop-selected="2018">
+                                <li>
+                                    <a href="#">
+                                        <span class="header__wrap__date__drop__redaction__month">Окт.</span>
+                                        <span class="header__wrap__date__drop__redaction__number">№17</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <span class="header__wrap__date__drop__redaction__month">Сент.</span>
+                                        <span class="header__wrap__date__drop__redaction__number">№16</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <span class="header__wrap__date__drop__redaction__month">Авг.</span>
+                                        <span class="header__wrap__date__drop__redaction__number">№15</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <span class="header__wrap__date__drop__redaction__month">Июль</span>
+                                        <span class="header__wrap__date__drop__redaction__number">№14</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <span class="header__wrap__date__drop__redaction__month">Июнь</span>
+                                        <span class="header__wrap__date__drop__redaction__number">№13</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <span class="header__wrap__date__drop__redaction__month">Май.</span>
+                                        <span class="header__wrap__date__drop__redaction__number">№12</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <span class="header__wrap__date__drop__redaction__month">Апр.</span>
+                                        <span class="header__wrap__date__drop__redaction__number">№11</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <span class="header__wrap__date__drop__redaction__month">Март.</span>
+                                        <span class="header__wrap__date__drop__redaction__number">№10</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <span class="header__wrap__date__drop__redaction__month">Фев.</span>
+                                        <span class="header__wrap__date__drop__redaction__number">№9</span>
+                                    </a>
+                                </li>
+                            </ul>
+                            <ul  class="header__wrap__date__drop__redaction" data-js-drop-selected="2017">
+                                <li>
+                                    <a href="#">
+                                        <span class="header__wrap__date__drop__redaction__month">Окт.</span>
+                                        <span class="header__wrap__date__drop__redaction__number">№27</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <span class="header__wrap__date__drop__redaction__month">Сент.</span>
+                                        <span class="header__wrap__date__drop__redaction__number">№26</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <span class="header__wrap__date__drop__redaction__month">Апр.</span>
+                                        <span class="header__wrap__date__drop__redaction__number">№21</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <span class="header__wrap__date__drop__redaction__month">Март.</span>
+                                        <span class="header__wrap__date__drop__redaction__number">№20</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <span class="header__wrap__date__drop__redaction__month">Фев.</span>
+                                        <span class="header__wrap__date__drop__redaction__number">№19</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <span class="header__wrap__date__drop__redaction__month">Янв.</span>
+                                        <span class="header__wrap__date__drop__redaction__number">№18</span>
+                                    </a>
+                                </li>
+                            </ul>
+                            <ul  class="header__wrap__date__drop__redaction" data-js-drop-selected="2016">
+                                <li>
+                                    <a href="#">
+                                        <span class="header__wrap__date__drop__redaction__month">Май.</span>
+                                        <span class="header__wrap__date__drop__redaction__number">№22</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <span class="header__wrap__date__drop__redaction__month">Апр.</span>
+                                        <span class="header__wrap__date__drop__redaction__number">№21</span>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
                 </div>
             </div>
             <form class="container-small header-search">
@@ -36,75 +227,25 @@
                     </label>
                 </div>
             </form>
-            <input type="checkbox" id="collapse-menu">
-            <label for="collapse-menu" class="header-nav__btn"><i class="ico"></i></label>
-            <div class="container-small header-nav">
-                <nav class="header-nav__wrap">
-                    <p class="header-nav__title">Рубрики</p>
-                    <ul class="header-nav__list">
-                        <li>
-                            <a href="#">Команда</a>
-                        </li>
-                        <li>
-                            <a href="#">Карьера</a>
-                        </li>
-                        <li>
-                            <a href="#">Интервью</a>
-                        </li>
-                        <li>
-                            <a href="#" class="active">Трансформация</a>
-                        </li>
-                        <li>
-                            <a href="#">Спорт</a>
-                        </li>
-                        <li>
-                            <a href="#">Награды</a>
-                        </li>
-                        <li>
-                            <a href="#">События</a>
-                        </li>
-                        <li>
-                            <a href="#">Назначения</a>
-                        </li>
-                        <li>
-                            <a href="#">Инфографика</a>
-                        </li>
-                        <li>
-                            <a href="#">Фотофакт</a>
-                        </li>
-                        <li>
-                            <a href="#">Клуб привилегий</a>
-                        </li>
-                        <li>
-                            <a href="#">От первого лица</a>
-                        </li>
-                        <li>
-                            <a href="#">Тема номера</a>
-                        </li>
-                    </ul>
-                    <a class="header-nav__link" href="#">Содержание номера</a>
-                </nav>
-            </div>
         </div>
     </div>
 </header>
 <main class="container-fluid">
+    <div class="breadcrumb">
+        <ul>
+            <li>
+                <a href="#">Главная</a>
+            </li>
+            <li>
+                <a href="#">Команда</a>
+            </li>
+        </ul>
+    </div>
+    <div class="pages-head">
+        <h2 class="show-article__title">Команда</h2>
+    </div>
     <div class="container">
-        <div class="breadcrumb">
-            <ul>
-                <li>
-                    <a href="#">Главная</a>
-                </li>
-                <li>
-                    <a href="#">Трансформация</a>
-                </li>
-                <li>
-                    <a href="#">Бережливый квест</a>
-                </li>
-            </ul>
-        </div>
         <div class="article-open">
-            <h3 class="article-open__general-title">Бережливый квест</h3>
             <p class="article-open__text">
                 Японская система отказа от всего лишнего в бизнес процессах хорошо показала себя в Банковской системе. На чем строится <a href="#">«Бережливый» подход,</a> рассказала Елена Туманова, советник департамента операционной поддержки Бизнеса Банка ВТБ.
             </p>
@@ -270,35 +411,67 @@
                     Базовые знания по проектному управлению сотрудники получают на внутренних семинарах практикумах, кроме этого, нами разработана методология управления внутренними проектами по улучшению в рамках ПС департамента, где в простой форме описаны сценарии управления каждым типом проекта. Подразумевается, что любой сотрудник ДОПБ сможет заполнить форму паспорта проекта и в дальнейшем отчитаться о результатах.
                 </p>
             </div>
-            <p class="article-open__blue-title">Больше новостей по теме</p>
-            <div class="articles">
-                <div class="articles__card">
-                    <div class="articles__card__bg" style="background: url('assets/img/photo/articles_bg_1.jpg')"></div>
-                    <p class="articles__card__info">
-                        <span class="articles__card__info__type">Трансформация</span>
-                        <span class="articles__card__info__date">№3, июнь 2018</span>
-                    </p>
-                    <a href="#" class="articles__card__title">Путь к клиенту. Переход на сервисную модель</a>
-                    <p class="articles__card__text">В Банке ВТБ начался подготовительный этап перехода на новую систему организации работ – сервисную модель.</p>
-                </div>
-                <div class="articles__card">
-                    <div class="articles__card__bg" style="background: url('assets/img/photo/articles_bg_1.jpg')"></div>
-                    <p class="articles__card__info">
-                        <span class="articles__card__info__type">Трансформация</span>
-                        <span class="articles__card__info__date">№3, июнь 2018</span>
-                    </p>
-                    <a href="#" class="articles__card__title">Как работать в кросс-функциональной группе</a>
-                    <p class="articles__card__text">Работа в кросс-функциональной группе действует по принципам гибкой методологии разработки.</p>
-                </div>
-                <div class="articles__card">
-                    <div class="articles__card__bg" style="background: url('assets/img/photo/articles_bg_1.jpg')"></div>
-                    <p class="articles__card__info">
-                        <span class="articles__card__info__type">Трансформация</span>
-                        <span class="articles__card__info__date">№3, июнь 2018</span>
-                    </p>
-                    <a href="#" class="articles__card__title">Новые бизнес требования</a>
-                    <p class="articles__card__text">Использование структурированных цифровых документов, автоматизация процессов, конфиденциальность, разграничение прав доступа и интуитивно понятный интерфейс.</p>
-                </div>
+        </div>
+    </div>
+    <div class="container-small">
+        <div class="side-bar">
+            <div class="side-bar__head">
+                <p class="side-bar__title">Рубрики</p>
+                <a href="#" class="side-bar__collapse" data-js-collapse="side-bar"><i></i></a>
+            </div>
+            <ul class="side-bar__list">
+                <li><a href="#">Команда</a></li>
+                <li><a href="#">Награды</a></li>
+                <li><a href="#" class="m-new">От первого лица</a></li>
+                <li><a href="#">События</a></li>
+                <li><a href="#">Назначения</a></li>
+                <li><a href="#" class="m-new">Инфографика</a></li>
+                <li><a href="#" class="m-new active">Тема номера</a></li>
+                <li><a href="#">Интервью</a></li>
+                <li><a href="#">Карьера</a></li>
+                <li><a href="#" class="m-new">Клиентоориентированность</a></li>
+                <li><a href="#">Ценности</a></li>
+                <li><a href="#">Продукт</a></li>
+                <li><a href="#">Трансформация</a></li>
+                <li><a href="#">Культура</a></li>
+                <li><a href="#">Книжная полка</a></li>
+                <li><a href="#">Спорт</a></li>
+                <li><a href="#" class="m-new">Фотофакт</a></li>
+                <li><a href="#">Клуб привилегий</a></li>
+            </ul>
+            <div class="side-bar__group">
+                <a href="#">Содержание номера</a>
+                <a href="#">Архив номеров</a>
+            </div>
+        </div>
+        <p class="article-open__blue-title">Больше новостей по теме</p>
+        <div class="articles">
+            <div class="articles__card">
+                <div class="articles__card__bg" style="background: url('assets/img/photo/articles_bg_1.jpg')"></div>
+                <p class="articles__card__info">
+                    <span class="articles__card__info__type">Трансформация</span>
+                    <span class="articles__card__info__date">№3, июнь 2018</span>
+                </p>
+                <a href="#" class="articles__card__title">Путь к клиенту. Переход на сервисную модель</a>
+                <p class="articles__card__text">В Банке ВТБ начался подготовительный этап перехода на новую систему организации работ – сервисную модель.</p>
+            </div>
+            <div class="articles__card">
+                <div class="articles__card__bg" style="background: url('assets/img/photo/articles_bg_1.jpg')"></div>
+                <p class="articles__card__info">
+                    <span class="articles__card__info__type">Трансформация</span>
+                    <span class="articles__card__info__date">№3, июнь 2018</span>
+                </p>
+                <a href="#" class="articles__card__title">Как работать в кросс-функциональной группе</a>
+                <p class="articles__card__text">Работа в кросс-функциональной группе действует по принципам гибкой методологии разработки.</p>
+            </div>
+            <div class="articles__card">
+                <div class="articles__card__bg" style="background: url('assets/img/photo/articles_bg_1.jpg')"></div>
+                <p class="articles__card__info">
+                    <span class="articles__card__info__type">Трансформация</span>
+                    <span class="articles__card__info__date">№3, июнь 2018</span>
+                </p>
+                <a href="#" class="articles__card__title">Новые бизнес требования</a>
+                <p class="articles__card__text">Использование структурированных цифровых документов, автоматизация процессов, конфиденциальность, разграничение прав доступа и интуитивно понятный интерфейс.</p>
             </div>
         </div>
     </div>
@@ -371,5 +544,6 @@
         </div>
     </div>
 </footer>
+<script src="assets/js/script.js"></script>
 </body>
 </html>
