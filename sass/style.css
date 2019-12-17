@@ -4385,6 +4385,68 @@ body.mod-modal {
 }
 
 /* Опциональные стили */
+/* line 1, _ie11.scss */
+.hot__content__bg {
+  left: 0;
+  top: 0;
+}
+
+/* line 5, _ie11.scss */
+.hot__content__info__title {
+  max-width: 100%;
+}
+
+/* line 8, _ie11.scss */
+.hot__content__info__text {
+  max-width: 100%;
+}
+
+/* line 11, _ie11.scss */
+.user__info__status__position {
+  max-width: 100%;
+}
+
+/* line 14, _ie11.scss */
+.user__info__status {
+  width: 100%;
+}
+
+/* line 17, _ie11.scss */
+.articles__card__text {
+  max-width: 100%;
+}
+
+/* line 20, _ie11.scss */
+.compilation__content__card__info {
+  width: 100%;
+}
+
+/* line 23, _ie11.scss */
+.compilation__content__card__info__text {
+  max-width: 100%;
+}
+
+/* line 26, _ie11.scss */
+.compilation__content__card__info__title {
+  max-width: 100%;
+}
+
+/* line 29, _ie11.scss */
+.comment__body__content__text {
+  max-width: 100%;
+}
+
+/* line 32, _ie11.scss */
+.article-open__indicators__text {
+  max-width: 100%;
+}
+
+/* line 35, _ie11.scss */
+.pagination {
+  justify-content: space-around;
+}
+
+/* Опциональные стили */
 /* line 1, _footer.scss */
 .footer {
   width: 100%;
