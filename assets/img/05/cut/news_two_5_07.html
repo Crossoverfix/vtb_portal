@@ -1,18 +1,553 @@
-<div class="article-open__block">
-    <div class="article-open__block__user">
-        <div class="article-open__block__user__img" style="background: url('assets/img/05/user_1.jpg')"></div>
-        <div class="article-open__block__user__info">
-            <p class="article-open__block__user__name">Владимир Дергачев</p>
-            <p class="article-open__block__user__post">Назначен руководителем департамента развития инфраструктуры</p>
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1, shrink-to-fit=no">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="format-detection" content="telephone=no">
+    <title>VTB Article</title>
+    <link href="sass/style.css" rel="stylesheet">
+    <script src="assets/js/jquery-3.4.1.js"></script>
+</head>
+<body>
+<header>
+    <div class="header">
+        <div class="container-fluid">
+            <div class="container header__wrap">
+                <div class="header__wrap__logo">
+                    <a href="#">
+                        <img src="assets/img/ico/logo_vtb.png" alt="logo">
+                    </a>
+                </div>
+                <a href="#" class="header__wrap__name">
+                    <p class="header__wrap__name__title">Энергия команды</p>
+                    <p class="header__wrap__name__sub-title">Онлайн-журнал</p>
+                </a>
+                <div class="header__wrap__date">
+                    <a href="#" class="header__wrap__date__link" data-js-drop="redaction">
+                        <p class="header__wrap__date__number">№27</p>
+                        <p class="header__wrap__date__year">Июнь 2019</p>
+                    </a>
+                    <div class="header__wrap__date__drop">
+                        <ul class="header__wrap__date__drop__year">
+                            <li>
+                                <a href="#" data-js-drop-select="2019">2019</a>
+                            </li>
+                            <li>
+                                <a href="#" data-js-drop-select="2018">2018</a>
+                            </li>
+                            <li>
+                                <a href="#" data-js-drop-select="2017">2017</a>
+                            </li>
+                            <li>
+                                <a href="#" data-js-drop-select="2016">2016</a>
+                            </li>
+                        </ul>
+                        <div class="header__wrap__date__drop__second">
+                            <ul  class="header__wrap__date__drop__redaction" data-js-drop-selected="2019">
+                                <li>
+                                    <a href="#">
+                                        <span class="header__wrap__date__drop__redaction__month">Окт.</span>
+                                        <span class="header__wrap__date__drop__redaction__number">№27</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <span class="header__wrap__date__drop__redaction__month">Сент.</span>
+                                        <span class="header__wrap__date__drop__redaction__number">№26</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <span class="header__wrap__date__drop__redaction__month">Авг.</span>
+                                        <span class="header__wrap__date__drop__redaction__number">№25</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <span class="header__wrap__date__drop__redaction__month">Июль</span>
+                                        <span class="header__wrap__date__drop__redaction__number">№24</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <span class="header__wrap__date__drop__redaction__month">Июнь</span>
+                                        <span class="header__wrap__date__drop__redaction__number">№23</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <span class="header__wrap__date__drop__redaction__month">Май.</span>
+                                        <span class="header__wrap__date__drop__redaction__number">№22</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <span class="header__wrap__date__drop__redaction__month">Апр.</span>
+                                        <span class="header__wrap__date__drop__redaction__number">№21</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <span class="header__wrap__date__drop__redaction__month">Март.</span>
+                                        <span class="header__wrap__date__drop__redaction__number">№20</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <span class="header__wrap__date__drop__redaction__month">Фев.</span>
+                                        <span class="header__wrap__date__drop__redaction__number">№19</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <span class="header__wrap__date__drop__redaction__month">Янв.</span>
+                                        <span class="header__wrap__date__drop__redaction__number">№18</span>
+                                    </a>
+                                </li>
+                            </ul>
+                            <ul  class="header__wrap__date__drop__redaction" data-js-drop-selected="2018">
+                                <li>
+                                    <a href="#">
+                                        <span class="header__wrap__date__drop__redaction__month">Окт.</span>
+                                        <span class="header__wrap__date__drop__redaction__number">№17</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <span class="header__wrap__date__drop__redaction__month">Сент.</span>
+                                        <span class="header__wrap__date__drop__redaction__number">№16</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <span class="header__wrap__date__drop__redaction__month">Авг.</span>
+                                        <span class="header__wrap__date__drop__redaction__number">№15</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <span class="header__wrap__date__drop__redaction__month">Июль</span>
+                                        <span class="header__wrap__date__drop__redaction__number">№14</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <span class="header__wrap__date__drop__redaction__month">Июнь</span>
+                                        <span class="header__wrap__date__drop__redaction__number">№13</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <span class="header__wrap__date__drop__redaction__month">Май.</span>
+                                        <span class="header__wrap__date__drop__redaction__number">№12</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <span class="header__wrap__date__drop__redaction__month">Апр.</span>
+                                        <span class="header__wrap__date__drop__redaction__number">№11</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <span class="header__wrap__date__drop__redaction__month">Март.</span>
+                                        <span class="header__wrap__date__drop__redaction__number">№10</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <span class="header__wrap__date__drop__redaction__month">Фев.</span>
+                                        <span class="header__wrap__date__drop__redaction__number">№9</span>
+                                    </a>
+                                </li>
+                            </ul>
+                            <ul  class="header__wrap__date__drop__redaction" data-js-drop-selected="2017">
+                                <li>
+                                    <a href="#">
+                                        <span class="header__wrap__date__drop__redaction__month">Окт.</span>
+                                        <span class="header__wrap__date__drop__redaction__number">№27</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <span class="header__wrap__date__drop__redaction__month">Сент.</span>
+                                        <span class="header__wrap__date__drop__redaction__number">№26</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <span class="header__wrap__date__drop__redaction__month">Апр.</span>
+                                        <span class="header__wrap__date__drop__redaction__number">№21</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <span class="header__wrap__date__drop__redaction__month">Март.</span>
+                                        <span class="header__wrap__date__drop__redaction__number">№20</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <span class="header__wrap__date__drop__redaction__month">Фев.</span>
+                                        <span class="header__wrap__date__drop__redaction__number">№19</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <span class="header__wrap__date__drop__redaction__month">Янв.</span>
+                                        <span class="header__wrap__date__drop__redaction__number">№18</span>
+                                    </a>
+                                </li>
+                            </ul>
+                            <ul  class="header__wrap__date__drop__redaction" data-js-drop-selected="2016">
+                                <li>
+                                    <a href="#">
+                                        <span class="header__wrap__date__drop__redaction__month">Май.</span>
+                                        <span class="header__wrap__date__drop__redaction__number">№22</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <span class="header__wrap__date__drop__redaction__month">Апр.</span>
+                                        <span class="header__wrap__date__drop__redaction__number">№21</span>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <form class="container-small header-search">
+                <div class="header-search__body">
+                    <input class="header-search__body__input" type="text" name="search" placeholder="Поиск" autocomplete="off">
+                    <label class="header-search__body__btn">
+                        <input type="submit" name="ok">
+                    </label>
+                </div>
+            </form>
         </div>
     </div>
-</div>
-<p class="article-open__text">
-    <b>Владимир</b> родился в Москве. <b>В 1986 году</b> окончил Московский институт радиотехники, электроники и автоматики по специальности «автоматика и телемеханика».
-</p>
-<p class="article-open__text">
-    Начал карьеру инженером во Всесоюзном научно-исследовательском институте электромеханики. <b>В 1993 году</b> перешел в Альфа-банк, где прошел путь от инженера до директора дирекции сопровождения инфраструктуры информационных технологий.
-</p>
-<p class="article-open__text">
-    Под его руководством были выстроены центр обработки данных банка, сетевая и телекоммуникационная инфраструктура, системы защиты; внедрены практики DevOps и облачные технологии; создано сообщество «ИТ для людей», которое объединило ряд проектов по улучшению процессов в ИТ и развитию бренда ИТ.
-</p>
+</header>
+<main class="container-fluid">
+    <div class="breadcrumb">
+        <ul>
+            <li>
+                <a href="#">Главная</a>
+            </li>
+            <li>
+                <a href="#">Назначения</a>
+            </li>
+        </ul>
+    </div>
+    <div class="pages-head">
+        <h2 class="show-article__title">Назначения</h2>
+    </div>
+    <div class="container">
+        <div class="article-open">
+            <div class="article-open__block">
+                <div class="article-open__block__user">
+                    <div class="article-open__block__user__img" style="background: url('assets/img/05/user_1.jpg')"></div>
+                    <div class="article-open__block__user__info">
+                        <p class="article-open__block__user__name">Владимир Дергачев</p>
+                        <p class="article-open__block__user__post">Назначен руководителем департамента развития инфраструктуры</p>
+                    </div>
+                </div>
+            </div>
+            <img src="assets/img/05/user_1.jpg" style="margin: 0 20px 20px 0; float: left; max-width: 300px">
+            <h3 class="article-open__title">Владимир Дергачев</h3>
+            <p class="article-open__text">
+                <b>Назначен руководителем департамента развития инфраструктуры</b>
+            </p>
+            <p class="article-open__text">
+                Владимир родился в Москве. В 1986 году окончил Московский институт радиотехники, электроники и автоматики по специальности «автоматика и телемеханика».
+            </p>
+            <p class="article-open__text">
+                Начал карьеру инженером во Всесоюзном научно-исследовательском институте электромеханики. В 1993 году перешел в Альфа-банк, где прошел путь от инженера до директора дирекции сопровождения инфраструктуры информационных технологий.
+            </p>
+            <p class="article-open__text">
+                Под его руководством были выстроены центр обработки данных банка, сетевая и телекоммуникационная инфраструктура, системы защиты; внедрены практики DevOps и облачные технологии; создано сообщество «ИТ для людей», которое объединило ряд проектов по улучшению процессов в ИТ и развитию бренда ИТ.
+            </p>
+            <div class="news__footer">
+                <div class="news__footer__social">
+                    <a href="#" class="news__footer__social__btn">Мне нравится</a>
+                    <div class="news-lazy__card__body__footer__social" data-js-social="true">
+                        <a href="#" class="social__like">5</a>
+                        <a href="#" class="social__view">37</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="comment">
+            <div class="comment__header">
+                <span class="comment__header__title">Комментарии</span>
+                <span class="comment__header__number">10</span>
+            </div>
+            <div class="comment__field">
+                <div class="comment__field__area">
+                    <textarea placeholder="Написать комментарий"></textarea>
+                </div>
+                <div class="comment__field__footer">
+                    <a href="#" class="comment__field__footer__btn">Отправить</a>
+                    <div class="comment__field__footer__user">
+                        <div class="comment__field__footer__user__avatar" style="background: url('assets/img/photo/comment_1.jpg')"></div>
+                        <span class="comment__field__footer__user__name">Анастасия Гайнуллова</span>
+                    </div>
+                </div>
+            </div>
+            <div class="comment__body ">
+                <div class="comment__body__point">
+                    <div class="comment__body__user">
+                        <div class="comment__body__user__avatar" style="background: url('assets/img/photo/comment_2.jpg')"></div>
+                        <span class="comment__body__user__name">Лидия Маринина</span>
+                    </div>
+                    <div class="comment__body__content">
+                        <div class="comment__body__content__wrap">
+                            <span class="comment__body__content__text">
+                                Была на турнире. Впечатления незабываемые! Очень радует, что Банк поддерживает такие мероприятия! Больше таких инициатив!
+                            </span>
+                            <div class="comment__body__content__option">
+                                <a href="#" class="comment__body__content__option__like">205</a>
+                                <a href="#" class="comment__body__content__option__answer">Ответить</a>
+                                <span class="comment__body__content__option__date">20.09.2019</span>
+                            </div>
+                        </div>
+                        <div class="comment__body__content__answer">
+                            <div class="comment__body__answer">
+                                <div class="comment__body__user">
+                                    <div class="comment__body__user__avatar" style="background: url('assets/img/photo/comment_3.jpg')"></div>
+                                    <span class="comment__body__user__name">Денис Сидоров</span>
+                                </div>
+                                <div class="comment__body__content">
+                                    <div class="comment__body__content__wrap">
+                                            <span class="comment__body__content__text">
+                                <b>@Лидия Маринина,</b> Согласен! Отличное мероприятие!
+                            </span>
+                                        <div class="comment__body__content__option">
+                                            <a href="#" class="comment__body__content__option__like">205</a>
+                                            <a href="#" class="comment__body__content__option__answer">Ответить</a>
+                                            <span class="comment__body__content__option__date">2 дня назад</span>
+                                        </div>
+                                    </div>
+                                    <div class="comment__body__content__answer">
+                                        <div class="comment__body__answer">
+                                            <div class="comment__body__user">
+                                                <div class="comment__body__user__avatar" style="background: url('assets/img/photo/comment_4.jpg')"></div>
+                                                <span class="comment__body__user__name">Тимур Щербак</span>
+                                            </div>
+                                            <div class="comment__body__content">
+                                                <div class="comment__body__content__wrap">
+                                                        <span class="comment__body__content__text">
+                                <b>@Денис Сидоров</b> Полностью поддерживаю предыдущего комментатора. Мне тоже все очень понравилось!
+                                                        </span>
+                                                    <div class="comment__body__content__option">
+                                                        <a href="#" class="comment__body__content__option__like">205</a>
+                                                        <a href="#" class="comment__body__content__option__answer">Ответить</a>
+                                                        <span class="comment__body__content__option__date">2 дня назад</span>
+                                                    </div>
+                                                </div>
+                                                <div class="comment__body__content__answer">
+
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="comment__field answer">
+                                            <div class="comment__field__area">
+                                                    <textarea placeholder="Написать комментарий">
+                                                    </textarea>
+                                            </div>
+                                            <div class="comment__field__footer">
+                                                <a href="#" class="comment__field__footer__btn">Отправить</a>
+                                                <a href="#" class="comment__field__footer__cancel">Отменить</a>
+                                                <div class="comment__field__footer__user">
+                                                    <div class="comment__field__footer__user__avatar" style="background: url('assets/img/photo/comment_1.jpg')"></div>
+                                                    <span class="comment__field__footer__user__name">Анастасия Гайнуллова</span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="comment__body__answer delet">
+                                <div class="comment__body__user">
+                                    <div class="comment__body__user__avatar" style="background: url('assets/img/photo/comment_3.jpg')"></div>
+                                    <span class="comment__body__user__name">Сергей Кошелев</span>
+                                </div>
+                                <div class="comment__body__content">
+                                    <div class="comment__body__content__wrap">
+                                        <div class="comment__body__content__option">
+                                            <span class="comment__body__content__option__status">Комментарий удален.</span>
+                                            <span class="comment__body__content__option__date">2 дня назад</span>
+                                        </div>
+                                    </div>
+                                    <div class="comment__body__content__answer"></div>
+                                </div>
+                            </div>
+                            <div class="comment__body__answer your">
+                                <div class="comment__body__user">
+                                    <div class="comment__body__user__avatar" style="background: url('assets/img/photo/comment_1.jpg')"></div>
+                                    <span class="comment__body__user__name">Анастасия Гайнуллова</span>
+                                </div>
+                                <div class="comment__body__content">
+                                    <div class="comment__body__content__wrap">
+                                            <span class="comment__body__content__text">
+                                                Боже мой! Вы что несете вообще?!
+                                            </span>
+                                        <div class="comment__body__content__option">
+                                            <a href="#" class="comment__body__content__option__like">205</a>
+                                            <a href="#" class="comment__body__content__option__answer">Ответить</a>
+                                            <span class="comment__body__content__option__date">2 дня назад</span>
+                                        </div>
+                                        <a href="#" class="comment__body__content__wrap__option"></a>
+                                        <div class="comment__body__content__wrap__drop">
+                                            <a href="#">Редактировать</a>
+                                            <a href="#">Удалить</a>
+                                        </div>
+                                    </div>
+                                    <div class="comment__body__content__answer"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="comment__footer">
+                <a href="#" class="comment__footer__more">Читать все комментарии</a>
+            </div>
+        </div>
+    </div>
+    <div class="container-small">
+        <div class="side-bar">
+            <div class="side-bar__head">
+                <p class="side-bar__title">Рубрики</p>
+                <a href="#" class="side-bar__collapse" data-js-collapse="side-bar"><i></i></a>
+            </div>
+            <ul class="side-bar__list">
+                <li><a href="#">Команда</a></li>
+                <li><a href="#">Награды</a></li>
+                <li><a href="#" class="m-new">От первого лица</a></li>
+                <li><a href="#">События</a></li>
+                <li><a href="#">Назначения</a></li>
+                <li><a href="#" class="m-new">Инфографика</a></li>
+                <li><a href="#" class="m-new active">Тема номера</a></li>
+                <li><a href="#">Интервью</a></li>
+                <li><a href="#">Карьера</a></li>
+                <li><a href="#" class="m-new">Клиентоориентированность</a></li>
+                <li><a href="#">Ценности</a></li>
+                <li><a href="#">Продукт</a></li>
+                <li><a href="#">Трансформация</a></li>
+                <li><a href="#">Культура</a></li>
+                <li><a href="#">Книжная полка</a></li>
+                <li><a href="#">Спорт</a></li>
+                <li><a href="#" class="m-new">Фотофакт</a></li>
+                <li><a href="#">Клуб привилегий</a></li>
+            </ul>
+            <div class="side-bar__group">
+                <a href="#">Содержание номера</a>
+                <a href="#">Архив номеров</a>
+            </div>
+        </div>
+        <p class="article-open__blue-title mod-bar">Больше новостей по теме</p>
+        <div class="articles mod-bar">
+            <div class="articles__card">
+                <div class="articles__card__bg" style="background: url('assets/img/photo/articles_bg_1.jpg')"></div>
+                <p class="articles__card__info">
+                    <span class="articles__card__info__type">Трансформация</span>
+                    <span class="articles__card__info__date">№3, июнь 2018</span>
+                </p>
+                <a href="#" class="articles__card__title">Путь к клиенту. Переход на сервисную модель</a>
+                <p class="articles__card__text">В Банке ВТБ начался подготовительный этап перехода на новую систему организации работ – сервисную модель.</p>
+            </div>
+            <div class="articles__card">
+                <div class="articles__card__bg" style="background: url('assets/img/photo/articles_bg_1.jpg')"></div>
+                <p class="articles__card__info">
+                    <span class="articles__card__info__type">Трансформация</span>
+                    <span class="articles__card__info__date">№3, июнь 2018</span>
+                </p>
+                <a href="#" class="articles__card__title">Как работать в кросс-функциональной группе</a>
+                <p class="articles__card__text">Работа в кросс-функциональной группе действует по принципам гибкой методологии разработки.</p>
+            </div>
+            <div class="articles__card">
+                <div class="articles__card__bg" style="background: url('assets/img/photo/articles_bg_1.jpg')"></div>
+                <p class="articles__card__info">
+                    <span class="articles__card__info__type">Трансформация</span>
+                    <span class="articles__card__info__date">№3, июнь 2018</span>
+                </p>
+                <a href="#" class="articles__card__title">Новые бизнес требования</a>
+                <p class="articles__card__text">Использование структурированных цифровых документов, автоматизация процессов, конфиденциальность, разграничение прав доступа и интуитивно понятный интерфейс.</p>
+            </div>
+        </div>
+    </div>
+</main>
+<footer>
+    <div class="footer">
+        <div class="container-fluid">
+            <div class="footer__body">
+                <nav class="footer__body__nav">
+                    <ul>
+                        <li>
+                            <a href="#">Награды</a>
+                        </li>
+                        <li>
+                            <a href="#">Инфографика</a>
+                        </li>
+                        <li>
+                            <a href="#">Карьера</a>
+                        </li>
+                        <li>
+                            <a href="#">Спорт</a>
+                        </li>
+                        <li>
+                            <a href="#">От первого лица</a>
+                        </li>
+                        <li>
+                            <a href="#">Тема номера</a>
+                        </li>
+                        <li>
+                            <a href="#">Трансформация</a>
+                        </li>
+                        <li>
+                            <a href="#">Фотофакт</a>
+                        </li>
+                        <li>
+                            <a href="#">События</a>
+                        </li>
+                        <li>
+                            <a href="#">Интервью</a>
+                        </li>
+                        <li>
+                            <a href="#">Культура</a>
+                        </li>
+                        <li>
+                            <a href="#">Клуб привилегий</a>
+                        </li>
+                        <li>
+                            <a href="#">Назначения</a>
+                        </li>
+                        <li>
+                            <a href="#">Команда</a>
+                        </li>
+                        <li>
+                            <a href="#">Книжная полка</a>
+                        </li>
+                    </ul>
+                </nav>
+                <div class="footer__body__info">
+                    <a href="#" class="footer__body__info__title">
+                        <img align="logo" src="assets/img/ico/logo_vtb.png">
+                        <p>Энергия команды</p>
+                    </a>
+                    <p class="footer__body__info__text">
+                        <span class="footer__body__info__text__number">№27</span>
+                        <span class="footer__body__info__text__year">Июнь 2019</span>
+                    </p>
+                    <a href="#" class="footer__body__info__link">Редакция журнала</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</footer>
+<script src="assets/js/script.js"></script>
+</body>
+</html>
